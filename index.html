@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swaraj Sirsat – Websites & Banners for Hotels and Travel Agencies</title>
+<meta name="description" content="Done-for-you websites (₹9,999 – ₹19,999) and banner designs (₹299 – ₹499) for hotels, homestays and travel agencies in Uttarakhand and across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f4f7f6;
+    --ink: #13231f;
+    --muted: #55655f;
+    --brand: #0f6b55;
+    --brand-dark: #0a4d3d;
+    --accent: #f2a33a;
+    --line: #dde5e2;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: "Poppins", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  a { color: inherit; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 72px 0; }
+  h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; }
+  h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 12px; }
+  h3 { font-size: 1.1rem; margin-bottom: 6px; }
+  .lead { color: var(--muted); max-width: 640px; }
+  .btn { display: inline-block; padding: 13px 26px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+  .btn-primary { background: var(--accent); color: #1b1203; }
+  .btn-ghost { border: 2px solid #fff; color: #fff; }
+
+  /* Header */
+  header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-weight: 700; color: var(--brand); text-decoration: none; }
+  nav a { margin-left: 22px; text-decoration: none; font-size: .95rem; color: var(--muted); }
+  nav a:hover { color: var(--brand); }
+  @media (max-width: 720px) { nav { display: none; } }
+
+  /* Hero */
+  .hero { color: #fff; padding: 110px 0 120px; position: relative; overflow: hidden;
+          background: linear-gradient(160deg, #0a4d3d 0%, #0f6b55 55%, #2a8c73 100%); }
+  .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 140px;
+          background: linear-gradient(135deg, transparent 33%, rgba(255,255,255,.08) 33%, rgba(255,255,255,.08) 66%, transparent 66%),
+                      linear-gradient(225deg, transparent 33%, rgba(255,255,255,.12) 33%, rgba(255,255,255,.12) 66%, transparent 66%);
+          background-size: 220px 140px; }
+  .hero p { margin: 18px 0 30px; max-width: 600px; opacity: .92; font-size: 1.08rem; }
+  .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .tag { display: inline-block; background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 999px; font-size: .85rem; margin-bottom: 18px; }
+
+  /* Grids & cards */
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 36px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .soft { background: var(--bg-soft); }
+  .icon { font-size: 1.8rem; margin-bottom: 10px; }
+  .card p { color: var(--muted); font-size: .95rem; }
+
+  /* Template mockups */
+  .mock { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; }
+  .mock .bar { height: 26px; background: #e9eeec; display: flex; align-items: center; gap: 6px; padding: 0 10px; }
+  .mock .bar i { width: 9px; height: 9px; border-radius: 50%; background: #c5cfcb; display: block; }
+  .mock .shot { height: 150px; padding: 18px; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; }
+  .mock .shot b { font-size: 1.15rem; }
+  .mock .shot span { font-size: .8rem; opacity: .9; }
+  .mock .rows { padding: 14px 18px 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .mock .rows div { height: 44px; border-radius: 8px; background: var(--bg-soft); }
+  .mock .info { padding: 0 18px 18px; }
+  .mock .info p { color: var(--muted); font-size: .9rem; }
+  .s1 { background: linear-gradient(135deg, #234e70, #3f88a6); }
+  .s2 { background: linear-gradient(135deg, #7a3b12, #d27a2c); }
+  .s3 { background: linear-gradient(135deg, #2f5d34, #6ea85a); }
+
+  /* Banners */
+  .banner { border-radius: var(--radius); aspect-ratio: 1 / 1; padding: 22px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+  .banner small { opacity: .85; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
+  .banner strong { font-size: 1.35rem; line-height: 1.2; }
+  .banner em { font-style: normal; background: rgba(255,255,255,.2); align-self: flex-start; padding: 4px 12px; border-radius: 999px; font-size: .8rem; }
+  .b1 { background: linear-gradient(160deg, #b8410e, #f2a33a); }
+  .b2 { background: linear-gradient(160deg, #123c69, #4b86b4); }
+  .b3 { background: linear-gradient(160deg, #5a189a, #c77dff); }
+  .b4 { background: linear-gradient(160deg, #0a4d3d, #43aa8b); }
+
+  /* Pricing */
+  .price { font-size: 2rem; font-weight: 700; color: var(--brand); margin: 8px 0 4px; }
+  .price-note { color: var(--muted); font-size: .9rem; margin-bottom: 16px; }
+  ul.check { list-style: none; }
+  ul.check li { padding: 6px 0 6px 26px; position: relative; font-size: .95rem; }
+  ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: 700; }
+  .featured { border: 2px solid var(--brand); }
+
+  /* Steps */
+  .step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: 600; margin-bottom: 12px; }
+
+  /* FAQ */
+  details { border-bottom: 1px solid var(--line); padding: 16px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--muted); margin-top: 8px; }
+
+  /* Contact */
+  .contact { background: var(--brand-dark); color: #fff; text-align: center; }
+  .contact .lead { color: rgba(255,255,255,.85); margin: 0 auto 28px; }
+  .contact .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  footer { padding: 24px 0; text-align: center; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="logo">Swaraj Sirsat · Web &amp; Banner Design</a>
+    <nav>
+      <a href="#templates">Templates</a>
+      <a href="#banners">Banners</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">For hotels, homestays &amp; travel agencies · Uttarakhand &amp; all India</span>
+    <h1>Get more direct bookings with a website and banners that look as good as your property.</h1>
+    <p>I take a ready-made, professionally designed template, add your photos, rooms, tour packages and contact details, and put your website live for you. You don't need to do any technical work.</p>
+    <div class="actions">
+      <a href="#pricing" class="btn btn-primary">See prices</a>
+      <a href="#contact" class="btn btn-ghost">Talk to me</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Who this is for</h2>
+    <p class="lead">Small and mid-sized hospitality and travel businesses that get most of their bookings through phone calls, WhatsApp, or third-party booking sites, and want guests to find and book them directly.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🏨</div><h3>Hotels &amp; resorts</h3><p>Show your rooms, amenities, location and tariffs, with an enquiry button on every page.</p></div>
+      <div class="card"><div class="icon">🏡</div><h3>Homestays &amp; guesthouses</h3><p>A clean, simple site that tells your story and makes it easy for guests to call or WhatsApp you.</p></div>
+      <div class="card"><div class="icon">🧭</div><h3>Travel agencies &amp; tour operators</h3><p>List your packages (Char Dham, treks, hill stations, weekend trips) with itineraries and prices.</p></div>
+      <div class="card"><div class="icon">☕</div><h3>Cafés, camps &amp; adventure</h3><p>Rafting, camping and café owners in tourist towns who need to be found on Google.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="templates" class="soft">
+  <div class="wrap">
+    <h2>Website templates</h2>
+    <p class="lead">Every website starts from a ready template made for your type of business, then I customise it with your brand, photos and content.</p>
+    <div class="grid">
+      <div class="mock">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="shot s1"><b>Hotel template</b><span>Rooms · Amenities · Gallery · Location · Enquiry</span></div>
+        <div class="rows"><div></div><div></div><div></div></div>
+        <div class="info"><p>For hotels and resorts: room types with photos and tariffs, an amenities list, a Google Map and a booking enquiry form.</p></div>
+      </div>
+      <div class="mock">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="shot s2"><b>Travel agency template</b><span>Packages · Itineraries · Reviews · Enquiry</span></div>
+        <div class="rows"><div></div><div></div><div></div></div>
+        <div class="info"><p>For travel agencies and tour operators: package cards, day-by-day itineraries, inclusions and exclusions, and a WhatsApp enquiry button.</p></div>
+      </div>
+      <div class="mock">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="shot s3"><b>Homestay template</b><span>Our story · Rooms · Food · Nearby places</span></div>
+        <div class="rows"><div></div><div></div><div></div></div>
+        <div class="info"><p>For homestays and guesthouses: a warm, simple layout that shows your home, local food and nearby attractions.</p></div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>📱 Works on mobile</h3><p>Most guests search on their phones, so every template is built for mobile first.</p></div>
+      <div class="card"><h3>💬 WhatsApp &amp; call buttons</h3><p>Guests can contact you in one tap, the way they already prefer to book in India.</p></div>
+      <div class="card"><h3>🔎 Google-ready</h3><p>Basic SEO setup and a Google Map so people searching "hotel in Rishikesh" can find you.</p></div>
+      <div class="card"><h3>✏️ Your content, done for you</h3><p>Send me your photos and details on WhatsApp or email and I'll put them in.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="banners">
+  <div class="wrap">
+    <h2>Banner designs</h2>
+    <p class="lead">Eye-catching banners for Instagram, Facebook, WhatsApp status, Google Business posts and print, for every season and festival.</p>
+    <div class="grid">
+      <div class="banner b1"><small>Festival offer</small><strong>Diwali Stay Special<br>Book 2 nights, get breakfast free</strong><em>Your hotel name</em></div>
+      <div class="banner b2"><small>Season opening</small><strong>Char Dham Yatra packages now open</strong><em>Your agency name</em></div>
+      <div class="banner b3"><small>New Year</small><strong>New Year in the mountains: bonfire &amp; music night</strong><em>Your property</em></div>
+      <div class="banner b4"><small>Weekend getaway</small><strong>Monsoon escape: 2N/3D package from Dehradun</strong><em>Your agency name</em></div>
+    </div>
+    <p class="lead" style="margin-top:20px">These are example layouts. Every banner is designed with your own photos, logo, prices and offer.</p>
+  </div>
+</section>
+
+<section id="pricing" class="soft">
+  <div class="wrap">
+    <h2>Simple pricing</h2>
+    <p class="lead">One-time prices, no monthly design fees. You'll know the exact price before any work starts.</p>
+    <div class="grid">
+      <div class="card featured">
+        <h3>Done-for-you website</h3>
+        <div class="price">₹9,999 – ₹19,999</div>
+        <p class="price-note">One-time. The final price depends on the number of pages and features.</p>
+        <ul class="check">
+          <li>Ready template for your type of business</li>
+          <li>Your photos, rooms or packages, prices and contact details added</li>
+          <li>Works on mobile, with WhatsApp and call buttons</li>
+          <li>Enquiry form and Google Map</li>
+          <li>Basic Google search setup</li>
+          <li>I put the website live for you</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Banner design</h3>
+        <div class="price">₹299 – ₹499</div>
+        <p class="price-note">Per banner, depending on size and detail.</p>
+        <ul class="check">
+          <li>Social media posts and stories</li>
+          <li>Festival and seasonal offers</li>
+          <li>WhatsApp status and Google Business posts</li>
+          <li>Print-ready files for flex and hoardings</li>
+          <li>Your logo, photos and brand colours</li>
+        </ul>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:20px">Domain name and hosting are paid separately to the provider. I'll help you choose and set them up.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <div class="grid">
+      <div class="card"><div class="step-num">1</div><h3>Quick call or chat</h3><p>Tell me about your property or agency and what you need.</p></div>
+      <div class="card"><div class="step-num">2</div><h3>Pick a template</h3><p>Choose the design you like and send your photos and details.</p></div>
+      <div class="card"><div class="step-num">3</div><h3>I build it</h3><p>I customise everything and share a preview for your changes.</p></div>
+      <div class="card"><div class="step-num">4</div><h3>Go live</h3><p>Your website goes live, ready to share with guests.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>I already list on booking sites. Why do I need my own website?</summary><p>Booking sites charge a commission on every booking. Your own website lets guests find you and book with you directly, and it makes you look established and trustworthy.</p></details>
+    <details><summary>I'm not technical. Will I have to do anything?</summary><p>No. You send your photos and details, and I do the rest, including putting the website live.</p></details>
+    <details><summary>Do you only work in Uttarakhand?</summary><p>No. I work with hotels and travel businesses across India. Everything can be done over phone, WhatsApp and email.</p></details>
+    <details><summary>Can I order banners without a website?</summary><p>Yes. Banners are a separate service, priced per design.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's get your business online</h2>
+    <p class="lead">Tell me about your hotel, homestay or travel agency, and I'll suggest the right template and send you an exact price.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="mailto:swarajsirsat677@gmail.com">Email me</a>
+      <!-- To add WhatsApp later: <a class="btn btn-ghost" href="https://wa.me/91XXXXXXXXXX">WhatsApp me</a>
+           (country code + number, no + or spaces) -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Swaraj Sirsat · Websites &amp; banners for hotels and travel agencies · India</div>
+</footer>
+
+</body>
+</html>
