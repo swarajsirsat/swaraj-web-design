@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Swaraj Sirsat – Websites & Banners for Local Businesses | Pune</title>
-<meta name="description" content="Websites for clinics, restaurants, salons, homestays, shops and students across India. ₹9,999 – ₹19,999 one-time. Banners from ₹299. Free sample homepage before you pay. Based in Pune.">
+<meta name="description" content="Websites for clinics, restaurants, salons, homestays, shops and students across India. Free chat to discuss the best price for you. Free sample homepage before you pay. Based in Pune.">
 <meta property="og:title" content="Swaraj Sirsat – Web & Banner Design">
-<meta property="og:description" content="A website for your business, one-time price, done for you. See a free sample homepage with your own photos before you pay.">
+<meta property="og:description" content="A website for your business, done for you. See a free sample homepage with your own photos before you pay.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/restaurant.jpg">
 <meta name="theme-color" content="#0a4d3d">
@@ -32,8 +32,7 @@
   "areaServed": "IN",
   "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
   "telephone": "+91XXXXXXXXXX",
-  "email": "swarajsirsat677@gmail.com",
-  "priceRange": "₹299 – ₹19,999"
+  "email": "swarajsirsat677@gmail.com"
 }
 </script>
 
@@ -148,7 +147,7 @@
   .works { display: grid; gap: 26px; grid-template-columns: 1fr; margin-top: 26px; perspective: 1200px; }
   @media (min-width: 700px) { .works { grid-template-columns: repeat(2, 1fr); } }
   .work { position: relative; border-radius: var(--radius); background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: flex; flex-direction: column;
-          transform-style: preserve-3d; transform: rotateX(var(--tx, 0deg)) rotateY(var(--ty, 0deg)); transition: transform .35s ease-out, box-shadow .35s; will-change: transform; }
+          transform-style: preserve-3d; transform: rotateX(var(--tx, 4deg)) rotateY(var(--ty, -7deg)); transition: transform .35s ease-out, box-shadow .35s; will-change: transform; }
   .work:hover { box-shadow: 0 30px 60px -25px rgba(8,57,46,.45); }
   .work .shot { aspect-ratio: 16 / 10; border-radius: var(--radius) var(--radius) 0 0; overflow: hidden; position: relative; background: #e9eeec; }
   .work .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 6s ease; }
@@ -162,6 +161,10 @@
   .label { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 10px; border-radius: 999px; margin-bottom: 8px; }
   .label.live { background: #dff7ea; color: #0f6b3a; }
   .label.sample { background: #eef0ff; color: #4a3fb5; }
+  .work:nth-child(even) { --ty: 7deg; }
+  .work.reveal.in { transform: rotateX(var(--tx, 4deg)) rotateY(var(--ty, -7deg)); }
+  .work:hover { --tx: 0deg; --ty: 0deg; }
+  .work .shot { box-shadow: 0 24px 40px -24px rgba(0,0,0,.45); }
   .work.hide { display: none; }
 
   /* Steps */
@@ -250,7 +253,7 @@
     <a href="#top" class="logo"><i>S</i><div>Swaraj Sirsat<span>Web &amp; Banner Design · Pune</span></div></a>
     <nav>
       <a href="#work">Our work</a>
-      <a href="#pricing">Prices</a>
+      <a href="#pricing">Services</a>
       <a href="#how">How it works</a>
       <a href="#faq">Questions</a>
       <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">WhatsApp</a>
@@ -266,13 +269,13 @@
   <div class="wrap hero-grid">
     <div>
       <span class="tag reveal"><b></b>Taking new projects · Pune &amp; all India</span>
-      <h1 class="reveal" style="--d:.1s">A proper website for your business. <span class="hl">One-time price.</span> I do all the work.</h1>
+      <h1 class="reveal" style="--d:.1s">A proper website for your business. <span class="hl">I do all the work.</span></h1>
       <p class="sub reveal" style="--d:.2s">Namaste ji. I'm Swaraj, a web designer from Pune. You send your photos and details on WhatsApp, and I make your website, show you a preview, and put it live. Customers find you on Google and contact you in one tap.</p>
       <div class="actions reveal" style="--d:.3s">
         <a class="btn btn-wa btn-big pulse" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
         <a class="btn btn-call btn-big" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call me</a>
       </div>
-      <p class="note reveal" style="--d:.4s">Websites ₹9,999 – ₹19,999 one-time · Banners ₹299 – ₹499 · Free sample homepage before you pay</p>
+      <p class="note reveal" style="--d:.4s">💬 Free chat to discuss the best price for you · 🎁 Free sample homepage before you pay</p>
     </div>
 
     <div class="stage reveal" style="--d:.2s" id="stage" aria-hidden="true">
@@ -299,11 +302,11 @@
   <div class="wrap">
     <span class="eyebrow reveal">Portfolio</span>
     <h2 class="reveal">Our work</h2>
-    <p class="lead reveal">A live website I've built, plus sample websites for different kinds of businesses. Tap any one to open it and see how it works on your phone.</p>
+    <p class="lead reveal">Websites I've designed and built for different kinds of businesses, made to work great on mobile phones.</p>
     <div class="filters reveal" role="group" aria-label="Filter projects">
       <button class="on" data-f="all">All</button>
       <button data-f="live">Live websites</button>
-      <button data-f="business">Business samples</button>
+      <button data-f="business">Business websites</button>
       <button data-f="student">Student CV</button>
     </div>
     <div class="works">
@@ -320,36 +323,33 @@
         </div>
         <span class="glare"></span>
       </a>
-      <a class="work reveal" style="--d:.1s" data-cat="business" href="samples/homestay.html" target="_blank" rel="noopener">
-        <div class="shot"><img src="images/homestay.jpg" alt="Sample homestay website" loading="lazy"></div>
+      <div class="work reveal" style="--d:.1s" data-cat="business">
+        <div class="shot"><img src="images/homestay.jpg" alt="Homestay website design" loading="lazy"></div>
         <div class="info">
-          <span class="label sample">Sample design</span>
+          <span class="label sample">Website design</span>
           <h3>Homestay website</h3>
           <p>Rooms with prices, home food, guest reviews, map and a "Book on WhatsApp" button. Also suits hotels and resorts.</p>
-          <span class="more">Open sample →</span>
         </div>
         <span class="glare"></span>
-      </a>
-      <a class="work reveal" style="--d:.2s" data-cat="business" href="samples/restaurant.html" target="_blank" rel="noopener">
-        <div class="shot"><img src="images/restaurant.jpg" alt="Sample restaurant website" loading="lazy"></div>
+      </div>
+      <div class="work reveal" style="--d:.2s" data-cat="business">
+        <div class="shot"><img src="images/restaurant.jpg" alt="Restaurant website design" loading="lazy"></div>
         <div class="info">
-          <span class="label sample">Sample design</span>
+          <span class="label sample">Website design</span>
           <h3>Restaurant website</h3>
           <p>Menu with prices, timings, home delivery info and "Order on WhatsApp". Also suits cafés, bakeries and sweet shops.</p>
-          <span class="more">Open sample →</span>
         </div>
         <span class="glare"></span>
-      </a>
-      <a class="work reveal" style="--d:.3s" data-cat="student" href="samples/student-cv.html" target="_blank" rel="noopener">
-        <div class="shot"><img src="images/student-cv.jpg" alt="Sample student CV website" loading="lazy"></div>
+      </div>
+      <div class="work reveal" style="--d:.3s" data-cat="student">
+        <div class="shot"><img src="images/student-cv.jpg" alt="Student CV website design" loading="lazy"></div>
         <div class="info">
-          <span class="label sample">Sample design</span>
+          <span class="label sample">Website design</span>
           <h3>Student CV website</h3>
           <p>A personal website for students and freshers: skills, projects, education and a CV download. Share one link with companies.</p>
-          <span class="more">Open sample →</span>
         </div>
         <span class="glare"></span>
-      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -384,15 +384,14 @@
 <!-- PRICING -->
 <section id="pricing" class="soft pricing">
   <div class="wrap">
-    <span class="eyebrow reveal">Prices</span>
-    <h2 class="reveal">Simple, one-time prices</h2>
-    <p class="lead reveal">No monthly design fees. You'll know the exact price before I start.</p>
+    <span class="eyebrow reveal">Services</span>
+    <h2 class="reveal">What I can make for you</h2>
+    <p class="lead reveal">Every business is different, so there is no fixed price list. Let's have a free chat and find the best price for you.</p>
     <div class="grid grid-2">
       <div class="card featured reveal">
-        <span class="badge">Most popular</span>
+        <span class="badge">Most asked</span>
         <h3>Done-for-you website</h3>
-        <div class="price">₹9,999 – ₹19,999</div>
-        <p class="price-note">One-time. Depends on the number of pages and features.</p>
+        <p class="price-note">Complete website, made and put live for you.</p>
         <ul class="check">
           <li>Made from a ready template for your type of business</li>
           <li>Looks great on mobile phones</li>
@@ -403,12 +402,11 @@
           <li>Help linking your Google Business Profile</li>
           <li>I put the website live for you</li>
         </ul>
-        <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20to%20know%20the%20price%20of%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask for exact price</a>
+        <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20to%20discuss%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Free chat about price</a>
       </div>
       <div class="card reveal" style="--d:.1s">
         <h3>Banner design</h3>
-        <div class="price">₹299 – ₹499</div>
-        <p class="price-note">Per banner, depending on size and detail.</p>
+        <p class="price-note">Ready-to-post designs for social media and print.</p>
         <ul class="check">
           <li>Instagram and Facebook posts and stories</li>
           <li>WhatsApp status and Google Business posts</li>
@@ -419,7 +417,14 @@
         <a class="btn btn-outline" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20need%20a%20banner%20design." target="_blank" rel="noopener">Order a banner</a>
       </div>
     </div>
-    <p class="lead reveal" style="margin-top:20px">Domain name and hosting are paid separately to the provider. I'll help you choose and set them up. Student CV websites: ask me on WhatsApp for the price.</p>
+    <div class="offer reveal" style="margin-top:28px">
+      <div>
+        <h2>Get a free chat about price</h2>
+        <p>Tell me about your business on WhatsApp or a quick call. We'll talk about what you need, and I'll suggest the best price for you. No pressure, no obligation.</p>
+      </div>
+      <a class="btn btn-wa btn-big" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20would%20like%20a%20free%20chat%20about%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Start free chat</a>
+    </div>
+    <p class="lead reveal" style="margin-top:20px">Domain name and hosting are paid separately to the provider. I'll help you choose and set them up. I also make personal CV websites for students.</p>
   </div>
 </section>
 
@@ -483,10 +488,10 @@
       <details><summary>Is there a monthly fee?</summary><p>No monthly design fee. You pay once for the website. Only the domain and hosting are paid yearly to the provider, and I'll help you pick a good, low-cost option.</p></details>
       <details><summary>Is the free sample really free?</summary><p>Yes. I make a sample homepage with your details. If you don't like it, you don't pay anything.</p></details>
       <details><summary>I'm already on Justdial / Practo / Google Maps. Why do I need a website?</summary><p>Keep those too. A website is your own page, with no competitors next to you and no charge per enquiry. You can add its link to your Google listing, Instagram and visiting card.</p></details>
-      <details><summary>Do you make CV websites for students?</summary><p>Yes. A simple personal website with your skills, projects, education and a CV download button. Send me a WhatsApp message for the price.</p></details>
+      <details><summary>Do you make CV websites for students?</summary><p>Yes. A simple personal website with your skills, projects, education and a CV download button. Send me a WhatsApp message and we can talk about it.</p></details>
       <details><summary>How long does it take?</summary><p>Usually a few days after I get your photos and details. A bigger website with more pages takes a little longer.</p></details>
       <details><summary>Can I change things later?</summary><p>Yes. Just send me a message on WhatsApp with what you want changed.</p></details>
-      <details><summary>Can I order only banners?</summary><p>Yes. Banners are a separate service, priced per design.</p></details>
+      <details><summary>Can I order only banners?</summary><p>Yes. Banners are a separate service. Just tell me what you need.</p></details>
     </div>
   </div>
 </section>
@@ -565,8 +570,8 @@
         card.style.setProperty('--gy', (y * 100) + '%');
       });
       card.addEventListener('pointerleave', function () {
-        card.style.setProperty('--tx', '0deg');
-        card.style.setProperty('--ty', '0deg');
+        card.style.removeProperty('--tx');
+        card.style.removeProperty('--ty');
       });
     });
   }
