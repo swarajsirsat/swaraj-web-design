@@ -3,97 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swaraj Sirsat – Websites & Banners for Hotels and Travel Agencies</title>
-<meta name="description" content="Done-for-you websites (₹9,999 – ₹19,999) and banner designs (₹299 – ₹499) for hotels, homestays and travel agencies in Uttarakhand and across India.">
+<title>Swaraj Sirsat – Websites & Banners for Local Businesses | Pune</title>
+<meta name="description" content="Websites for clinics, restaurants, salons, shops, hotels and local businesses across India. ₹9,999 – ₹19,999 one-time. Banners from ₹299. Free sample homepage before you pay. Based in Pune.">
+<meta property="og:title" content="Swaraj Sirsat – Web & Banner Design">
+<meta property="og:description" content="A website for your business, one-time price, done for you. See a free sample homepage with your own photos before you pay.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f6b55">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!--
+  ===== EDIT THESE BEFORE GOING LIVE =====
+  Find and replace in this file:
+    91XXXXXXXXXX   -> your WhatsApp number with 91, no + or spaces (e.g. 919876543210)
+    +91XXXXXXXXXX  -> your phone number for the call button (e.g. +919876543210)
+  Project screenshots: put them in an "images" folder (images/ainakul.jpg etc.).
+  ========================================
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Swaraj Sirsat – Web & Banner Design",
+  "description": "Done-for-you websites and banner designs for small local businesses across India.",
+  "areaServed": "IN",
+  "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
+  "telephone": "+91XXXXXXXXXX",
+  "email": "swarajsirsat677@gmail.com",
+  "priceRange": "₹299 – ₹19,999"
+}
+</script>
+
 <style>
   :root {
     --bg: #ffffff;
-    --bg-soft: #f4f7f6;
+    --bg-soft: #f5f7f4;
     --ink: #13231f;
     --muted: #55655f;
     --brand: #0f6b55;
     --brand-dark: #0a4d3d;
     --accent: #f2a33a;
+    --wa: #25d366;
+    --wa-dark: #128c4a;
     --line: #dde5e2;
     --radius: 14px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: "Poppins", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  body { font-family: "Poppins", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; padding-bottom: 72px; }
+  @media (min-width: 821px) { body { padding-bottom: 0; } }
   a { color: inherit; }
+  img { max-width: 100%; display: block; }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-  section { padding: 72px 0; }
-  h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; }
-  h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 12px; }
-  h3 { font-size: 1.1rem; margin-bottom: 6px; }
-  .lead { color: var(--muted); max-width: 640px; }
-  .btn { display: inline-block; padding: 13px 26px; border-radius: 999px; font-weight: 600; text-decoration: none; }
-  .btn-primary { background: var(--accent); color: #1b1203; }
-  .btn-ghost { border: 2px solid #fff; color: #fff; }
+  section { padding: 64px 0; }
+  h1 { font-size: clamp(1.9rem, 5.2vw, 3.1rem); line-height: 1.15; }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); line-height: 1.25; margin-bottom: 10px; }
+  h3 { font-size: 1.08rem; margin-bottom: 6px; }
+  .lead { color: var(--muted); max-width: 660px; }
+  .soft { background: var(--bg-soft); }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 1rem; transition: transform .15s, filter .15s; }
+  .btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
+  .btn svg { width: 22px; height: 22px; flex: none; }
+  .btn-wa { background: var(--wa); color: #06331b; }
+  .btn-call { background: #fff; color: var(--brand-dark); }
+  .btn-outline { border: 2px solid var(--brand); color: var(--brand); }
+  .btn-big { padding: 17px 32px; font-size: 1.08rem; }
+  .actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
   /* Header */
-  header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.95); border-bottom: 1px solid var(--line); }
-  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-  .logo { font-weight: 700; color: var(--brand); text-decoration: none; }
-  nav a { margin-left: 22px; text-decoration: none; font-size: .95rem; color: var(--muted); }
+  header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; }
+  .logo { font-weight: 700; color: var(--brand); text-decoration: none; line-height: 1.2; font-size: .98rem; }
+  .logo span { display: block; font-weight: 500; color: var(--muted); font-size: .75rem; }
+  nav { display: flex; align-items: center; gap: 22px; }
+  nav a { text-decoration: none; font-size: .93rem; color: var(--muted); }
   nav a:hover { color: var(--brand); }
-  @media (max-width: 720px) { nav { display: none; } }
+  nav .btn { padding: 9px 18px; font-size: .9rem; color: #06331b; }
+  @media (max-width: 820px) { nav a:not(.btn) { display: none; } }
 
   /* Hero */
-  .hero { color: #fff; padding: 110px 0 120px; position: relative; overflow: hidden;
-          background: linear-gradient(160deg, #0a4d3d 0%, #0f6b55 55%, #2a8c73 100%); }
-  .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 140px;
-          background: linear-gradient(135deg, transparent 33%, rgba(255,255,255,.08) 33%, rgba(255,255,255,.08) 66%, transparent 66%),
-                      linear-gradient(225deg, transparent 33%, rgba(255,255,255,.12) 33%, rgba(255,255,255,.12) 66%, transparent 66%);
-          background-size: 220px 140px; }
-  .hero p { margin: 18px 0 30px; max-width: 600px; opacity: .92; font-size: 1.08rem; }
-  .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero { color: #fff; padding: 72px 0 84px; background: linear-gradient(160deg, #0a4d3d 0%, #0f6b55 60%, #2a8c73 100%); }
   .tag { display: inline-block; background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 999px; font-size: .85rem; margin-bottom: 18px; }
+  .hero p.sub { margin: 18px 0 28px; max-width: 620px; opacity: .93; font-size: 1.08rem; }
+  .hero .note { margin-top: 18px; font-size: .9rem; opacity: .85; }
+  .hero .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
+  .hero .chips span { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); padding: 5px 12px; border-radius: 999px; font-size: .82rem; }
 
   /* Grids & cards */
-  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 36px; }
+  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 32px; }
+  .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
   .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
-  .soft { background: var(--bg-soft); }
-  .icon { font-size: 1.8rem; margin-bottom: 10px; }
   .card p { color: var(--muted); font-size: .95rem; }
+  .icon { font-size: 1.7rem; margin-bottom: 8px; }
 
-  /* Template mockups */
-  .mock { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; }
-  .mock .bar { height: 26px; background: #e9eeec; display: flex; align-items: center; gap: 6px; padding: 0 10px; }
-  .mock .bar i { width: 9px; height: 9px; border-radius: 50%; background: #c5cfcb; display: block; }
-  .mock .shot { height: 150px; padding: 18px; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; }
-  .mock .shot b { font-size: 1.15rem; }
-  .mock .shot span { font-size: .8rem; opacity: .9; }
-  .mock .rows { padding: 14px 18px 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .mock .rows div { height: 44px; border-radius: 8px; background: var(--bg-soft); }
-  .mock .info { padding: 0 18px 18px; }
-  .mock .info p { color: var(--muted); font-size: .9rem; }
-  .s1 { background: linear-gradient(135deg, #234e70, #3f88a6); }
-  .s2 { background: linear-gradient(135deg, #7a3b12, #d27a2c); }
-  .s3 { background: linear-gradient(135deg, #2f5d34, #6ea85a); }
+  /* Problem */
+  .problem .card { border-left: 4px solid var(--accent); }
 
-  /* Banners */
-  .banner { border-radius: var(--radius); aspect-ratio: 1 / 1; padding: 22px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
-  .banner small { opacity: .85; letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
-  .banner strong { font-size: 1.35rem; line-height: 1.2; }
-  .banner em { font-style: normal; background: rgba(255,255,255,.2); align-self: flex-start; padding: 4px 12px; border-radius: 999px; font-size: .8rem; }
-  .b1 { background: linear-gradient(160deg, #b8410e, #f2a33a); }
-  .b2 { background: linear-gradient(160deg, #123c69, #4b86b4); }
-  .b3 { background: linear-gradient(160deg, #5a189a, #c77dff); }
-  .b4 { background: linear-gradient(160deg, #0a4d3d, #43aa8b); }
-
-  /* Pricing */
-  .price { font-size: 2rem; font-weight: 700; color: var(--brand); margin: 8px 0 4px; }
-  .price-note { color: var(--muted); font-size: .9rem; margin-bottom: 16px; }
-  ul.check { list-style: none; }
-  ul.check li { padding: 6px 0 6px 26px; position: relative; font-size: .95rem; }
-  ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: 700; }
-  .featured { border: 2px solid var(--brand); }
+  /* Offer strip */
+  .offer { background: #fff6e8; border: 2px dashed var(--accent); border-radius: var(--radius); padding: 28px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; }
+  .offer h2 { margin-bottom: 6px; }
+  .offer p { color: #5c4a2b; max-width: 620px; }
 
   /* Steps */
-  .step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: 600; margin-bottom: 12px; }
+  .step-num { width: 40px; height: 40px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: 700; margin-bottom: 12px; }
+
+  /* Pricing */
+  .price { font-size: 2rem; font-weight: 700; color: var(--brand); margin: 8px 0 2px; }
+  .price-note { color: var(--muted); font-size: .9rem; margin-bottom: 16px; }
+  ul.check { list-style: none; margin-bottom: 20px; }
+  ul.check li { padding: 6px 0 6px 26px; position: relative; font-size: .95rem; }
+  ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: 700; }
+  .featured { border: 2px solid var(--brand); position: relative; }
+  .badge { position: absolute; top: -12px; left: 24px; background: var(--brand); color: #fff; font-size: .75rem; font-weight: 600; padding: 3px 12px; border-radius: 999px; }
+  .pricing .card { display: flex; flex-direction: column; }
+  .pricing .card .btn { margin-top: auto; align-self: flex-start; }
+
+  /* Work */
+  .work { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; display: flex; flex-direction: column; }
+  .work .bar { height: 26px; background: #e9eeec; display: flex; align-items: center; gap: 6px; padding: 0 10px; }
+  .work .bar i { width: 9px; height: 9px; border-radius: 50%; background: #c5cfcb; display: block; }
+  .work .shot { aspect-ratio: 16 / 10; position: relative; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; }
+  .work .shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .work .shot b { font-size: 1.1rem; position: relative; }
+  .work .shot span { font-size: .8rem; opacity: .9; position: relative; }
+  .work .info { padding: 16px 18px 20px; }
+  .work .info p { color: var(--muted); font-size: .92rem; }
+  .work .info a { color: var(--brand); font-weight: 600; font-size: .9rem; text-decoration: none; display: inline-block; margin-top: 8px; }
+  .label { display: inline-block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); background: var(--bg-soft); padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
+  .g1 { background: linear-gradient(135deg, #1f5e8c, #4fa3c7); }
+  .g2 { background: linear-gradient(135deg, #7a3b12, #d27a2c); }
+  .g3 { background: linear-gradient(135deg, #6b2b5e, #c86fa8); }
+
+  /* Who */
+  .who { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
+  .who div { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+  .who b { display: block; margin-bottom: 4px; }
+  .who p { color: var(--muted); font-size: .9rem; }
+  .cities { margin-top: 22px; color: var(--muted); font-size: .95rem; }
+
+  /* Banners */
+  .banners { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .banner { border-radius: var(--radius); aspect-ratio: 1 / 1; padding: 18px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+  .banner small { opacity: .85; letter-spacing: .08em; text-transform: uppercase; font-size: .68rem; }
+  .banner strong { font-size: 1.1rem; line-height: 1.25; }
+  .banner em { font-style: normal; background: rgba(255,255,255,.22); align-self: flex-start; padding: 3px 10px; border-radius: 999px; font-size: .74rem; }
+  .b1 { background: linear-gradient(160deg, #b8410e, #f2a33a); }
+  .b2 { background: linear-gradient(160deg, #0f5c74, #3fb1c9); }
+  .b3 { background: linear-gradient(160deg, #5a189a, #c77dff); }
+  .b4 { background: linear-gradient(160deg, #8a1c3b, #e85d75); }
 
   /* FAQ */
   details { border-bottom: 1px solid var(--line); padding: 16px 0; }
@@ -102,169 +163,247 @@
 
   /* Contact */
   .contact { background: var(--brand-dark); color: #fff; text-align: center; }
-  .contact .lead { color: rgba(255,255,255,.85); margin: 0 auto 28px; }
-  .contact .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .contact .lead { color: rgba(255,255,255,.88); margin: 0 auto 28px; }
+  .contact .actions { justify-content: center; }
+  .contact .small { margin-top: 22px; font-size: .9rem; opacity: .85; }
+  .contact .small a { color: #fff; }
   footer { padding: 24px 0; text-align: center; color: var(--muted); font-size: .85rem; }
+
+  /* Sticky mobile bar */
+  .mbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -4px 16px rgba(0,0,0,.06); }
+  .mbar .btn { padding: 12px 10px; font-size: .95rem; }
+  .mbar .btn-call { background: var(--brand); color: #fff; }
+  @media (min-width: 821px) { .mbar { display: none; } }
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+</svg>
+
 <header>
   <div class="wrap">
-    <a href="#" class="logo">Swaraj Sirsat · Web &amp; Banner Design</a>
+    <a href="#top" class="logo">Swaraj Sirsat<span>Web &amp; Banner Design · Pune</span></a>
     <nav>
-      <a href="#templates">Templates</a>
-      <a href="#banners">Banners</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
+      <a href="#work">My work</a>
+      <a href="#pricing">Prices</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">Questions</a>
+      <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </div>
 </header>
 
+<main id="top">
+
+<!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="tag">For hotels, homestays &amp; travel agencies · Uttarakhand &amp; all India</span>
-    <h1>Get more direct bookings with a website and banners that look as good as your property.</h1>
-    <p>I take a ready-made, professionally designed template, add your photos, rooms, tour packages and contact details, and put your website live for you. You don't need to do any technical work.</p>
+    <span class="tag">For clinics, shops, restaurants, salons &amp; local businesses across India</span>
+    <h1>A proper website for your business. One-time price. I do all the work.</h1>
+    <p class="sub">Namaste ji. I'm Swaraj, a web designer from Pune. You send your photos and details on WhatsApp, and I make your website, show you a preview, and put it live. Customers can find you on Google and contact you in one tap.</p>
     <div class="actions">
-      <a href="#pricing" class="btn btn-primary">See prices</a>
-      <a href="#contact" class="btn btn-ghost">Talk to me</a>
+      <a class="btn btn-wa btn-big" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
+      <a class="btn btn-call btn-big" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call me</a>
+    </div>
+    <p class="note">Websites ₹9,999 – ₹19,999 one-time · Banners ₹299 – ₹499 · Free sample homepage before you pay</p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="wrap">
+    <h2>Your customers search on their phone before they call</h2>
+    <p class="lead">"Dentist near me." "Cake shop in Kothrud." "Homestay in Lonavala." If they can't find you, or your page looks old, they call the next business.</p>
+    <div class="grid">
+      <div class="card"><h3>No website? You look less trusted</h3><p>A business with its own website looks established. Customers feel safer calling you.</p></div>
+      <div class="card"><h3>Listing sites show your competitors</h3><p>Justdial, Practo, Sulekha and booking sites often charge per lead or per booking, and they show other businesses on the same page as you.</p></div>
+      <div class="card"><h3>Your own website brings enquiries straight to you</h3><p>Your timings, photos, services and a WhatsApp button, all in one place. You pay once, and every enquiry comes to you.</p></div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- FREE SAMPLE OFFER -->
+<section class="soft" style="padding:48px 0">
   <div class="wrap">
-    <h2>Who this is for</h2>
-    <p class="lead">Small and mid-sized hospitality and travel businesses that get most of their bookings through phone calls, WhatsApp, or third-party booking sites, and want guests to find and book them directly.</p>
-    <div class="grid">
-      <div class="card"><div class="icon">🏨</div><h3>Hotels &amp; resorts</h3><p>Show your rooms, amenities, location and tariffs, with an enquiry button on every page.</p></div>
-      <div class="card"><div class="icon">🏡</div><h3>Homestays &amp; guesthouses</h3><p>A clean, simple site that tells your story and makes it easy for guests to call or WhatsApp you.</p></div>
-      <div class="card"><div class="icon">🧭</div><h3>Travel agencies &amp; tour operators</h3><p>List your packages (Char Dham, treks, hill stations, weekend trips) with itineraries and prices.</p></div>
-      <div class="card"><div class="icon">☕</div><h3>Cafés, camps &amp; adventure</h3><p>Rafting, camping and café owners in tourist towns who need to be found on Google.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="templates" class="soft">
-  <div class="wrap">
-    <h2>Website templates</h2>
-    <p class="lead">Every website starts from a ready template made for your type of business, then I customise it with your brand, photos and content.</p>
-    <div class="grid">
-      <div class="mock">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="shot s1"><b>Hotel template</b><span>Rooms · Amenities · Gallery · Location · Enquiry</span></div>
-        <div class="rows"><div></div><div></div><div></div></div>
-        <div class="info"><p>For hotels and resorts: room types with photos and tariffs, an amenities list, a Google Map and a booking enquiry form.</p></div>
+    <div class="offer">
+      <div>
+        <h2>See your website before you pay anything</h2>
+        <p>Send me your business name and a few photos. I'll make a free sample homepage with your own details so you can see how it looks. If you like it, we go ahead. If not, no problem at all.</p>
       </div>
-      <div class="mock">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="shot s2"><b>Travel agency template</b><span>Packages · Itineraries · Reviews · Enquiry</span></div>
-        <div class="rows"><div></div><div></div><div></div></div>
-        <div class="info"><p>For travel agencies and tour operators: package cards, day-by-day itineraries, inclusions and exclusions, and a WhatsApp enquiry button.</p></div>
-      </div>
-      <div class="mock">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="shot s3"><b>Homestay template</b><span>Our story · Rooms · Food · Nearby places</span></div>
-        <div class="rows"><div></div><div></div><div></div></div>
-        <div class="info"><p>For homestays and guesthouses: a warm, simple layout that shows your home, local food and nearby attractions.</p></div>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="card"><h3>📱 Works on mobile</h3><p>Most guests search on their phones, so every template is built for mobile first.</p></div>
-      <div class="card"><h3>💬 WhatsApp &amp; call buttons</h3><p>Guests can contact you in one tap, the way they already prefer to book in India.</p></div>
-      <div class="card"><h3>🔎 Google-ready</h3><p>Basic SEO setup and a Google Map so people searching "hotel in Rishikesh" can find you.</p></div>
-      <div class="card"><h3>✏️ Your content, done for you</h3><p>Send me your photos and details on WhatsApp or email and I'll put them in.</p></div>
+      <a class="btn btn-wa btn-big" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20please%20make%20a%20free%20sample%20homepage%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Get my free sample</a>
     </div>
   </div>
 </section>
 
-<section id="banners">
+<!-- WORK -->
+<section id="work">
   <div class="wrap">
-    <h2>Banner designs</h2>
-    <p class="lead">Eye-catching banners for Instagram, Facebook, WhatsApp status, Google Business posts and print, for every season and festival.</p>
+    <h2>My work</h2>
+    <p class="lead">Websites I have built, plus sample designs from my ready templates.</p>
     <div class="grid">
-      <div class="banner b1"><small>Festival offer</small><strong>Diwali Stay Special<br>Book 2 nights, get breakfast free</strong><em>Your hotel name</em></div>
-      <div class="banner b2"><small>Season opening</small><strong>Char Dham Yatra packages now open</strong><em>Your agency name</em></div>
-      <div class="banner b3"><small>New Year</small><strong>New Year in the mountains: bonfire &amp; music night</strong><em>Your property</em></div>
-      <div class="banner b4"><small>Weekend getaway</small><strong>Monsoon escape: 2N/3D package from Dehradun</strong><em>Your agency name</em></div>
+      <div class="work">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <!-- Save a screenshot as images/ainakul.jpg (1600×1000 works well) -->
+        <div class="shot g1"><img src="images/ainakul.jpg" alt="Screenshot of the Ainakul website" loading="lazy" onerror="this.remove()"></div>
+        <div class="info">
+          <span class="label">Live website</span>
+          <h3>Ainakul</h3>
+          <!-- EDIT: one line about what Ainakul is and who it's for -->
+          <p>[One line: what Ainakul is, who it's for, and what I built.]</p>
+          <a href="https://ainakul.com" target="_blank" rel="noopener">Visit ainakul.com →</a>
+        </div>
+      </div>
+      <!-- Copy the block above for Project 2 and Project 3. Until then, these show template samples. -->
+      <div class="work">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="shot g2"><b>Clinic template</b><span>Doctor profile · Treatments · Timings · Book appointment</span></div>
+        <div class="info">
+          <span class="label">Sample design</span>
+          <h3>For clinics &amp; doctors</h3>
+          <p>Dental, skin, physio and small clinics. Patients see your timings and treatments, and book on WhatsApp.</p>
+        </div>
+      </div>
+      <div class="work">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <div class="shot g3"><b>Restaurant &amp; café template</b><span>Menu · Photos · Timings · Order on WhatsApp</span></div>
+        <div class="info">
+          <span class="label">Sample design</span>
+          <h3>For food businesses</h3>
+          <p>Restaurants, cafés, bakeries and sweet shops. Your menu, photos and location, with one-tap ordering.</p>
+        </div>
+      </div>
     </div>
-    <p class="lead" style="margin-top:20px">These are example layouts. Every banner is designed with your own photos, logo, prices and offer.</p>
   </div>
 </section>
 
-<section id="pricing" class="soft">
+<!-- PRICING -->
+<section id="pricing" class="soft pricing">
   <div class="wrap">
-    <h2>Simple pricing</h2>
-    <p class="lead">One-time prices, no monthly design fees. You'll know the exact price before any work starts.</p>
-    <div class="grid">
+    <h2>Simple, one-time prices</h2>
+    <p class="lead">No monthly design fees. You'll know the exact price before I start.</p>
+    <div class="grid grid-2">
       <div class="card featured">
+        <span class="badge">Most popular</span>
         <h3>Done-for-you website</h3>
         <div class="price">₹9,999 – ₹19,999</div>
-        <p class="price-note">One-time. The final price depends on the number of pages and features.</p>
+        <p class="price-note">One-time. Depends on the number of pages and features.</p>
         <ul class="check">
-          <li>Ready template for your type of business</li>
-          <li>Your photos, rooms or packages, prices and contact details added</li>
-          <li>Works on mobile, with WhatsApp and call buttons</li>
-          <li>Enquiry form and Google Map</li>
-          <li>Basic Google search setup</li>
+          <li>Made from a ready template for your type of business</li>
+          <li>Looks great on mobile phones</li>
+          <li>WhatsApp and call buttons on every page</li>
+          <li>Enquiry or appointment form</li>
+          <li>Google Map with your location</li>
+          <li>Set up so customers can find you on Google</li>
+          <li>Help linking your Google Business Profile</li>
           <li>I put the website live for you</li>
         </ul>
+        <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20to%20know%20the%20price%20of%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask for exact price</a>
       </div>
       <div class="card">
         <h3>Banner design</h3>
         <div class="price">₹299 – ₹499</div>
         <p class="price-note">Per banner, depending on size and detail.</p>
         <ul class="check">
-          <li>Social media posts and stories</li>
-          <li>Festival and seasonal offers</li>
+          <li>Instagram and Facebook posts and stories</li>
           <li>WhatsApp status and Google Business posts</li>
-          <li>Print-ready files for flex and hoardings</li>
-          <li>Your logo, photos and brand colours</li>
+          <li>Festival greetings: Diwali, Holi, New Year and more</li>
+          <li>Print-ready files for flex, standees and notice boards</li>
+          <li>Your logo, photos and colours</li>
         </ul>
+        <a class="btn btn-outline" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20need%20a%20banner%20design." target="_blank" rel="noopener">Order a banner</a>
       </div>
     </div>
     <p class="lead" style="margin-top:20px">Domain name and hosting are paid separately to the provider. I'll help you choose and set them up.</p>
   </div>
 </section>
 
-<section>
+<!-- HOW IT WORKS -->
+<section id="how">
   <div class="wrap">
     <h2>How it works</h2>
+    <p class="lead">Three simple steps. No technical work on your side.</p>
     <div class="grid">
-      <div class="card"><div class="step-num">1</div><h3>Quick call or chat</h3><p>Tell me about your property or agency and what you need.</p></div>
-      <div class="card"><div class="step-num">2</div><h3>Pick a template</h3><p>Choose the design you like and send your photos and details.</p></div>
-      <div class="card"><div class="step-num">3</div><h3>I build it</h3><p>I customise everything and share a preview for your changes.</p></div>
-      <div class="card"><div class="step-num">4</div><h3>Go live</h3><p>Your website goes live, ready to share with guests.</p></div>
+      <div class="card"><div class="step-num">1</div><h3>Send photos on WhatsApp</h3><p>Send your business name, photos, services, timings and address. Whatever you have is fine.</p></div>
+      <div class="card"><div class="step-num">2</div><h3>See a preview</h3><p>I make your website and send you a link. Tell me what to change and I'll change it.</p></div>
+      <div class="card"><div class="step-num">3</div><h3>Go live</h3><p>Once you're happy, I put it live. Share the link with your customers and on Google.</p></div>
     </div>
   </div>
 </section>
 
+<!-- WHO -->
 <section class="soft">
   <div class="wrap">
-    <h2>Questions</h2>
-    <details><summary>I already list on booking sites. Why do I need my own website?</summary><p>Booking sites charge a commission on every booking. Your own website lets guests find you and book with you directly, and it makes you look established and trustworthy.</p></details>
-    <details><summary>I'm not technical. Will I have to do anything?</summary><p>No. You send your photos and details, and I do the rest, including putting the website live.</p></details>
-    <details><summary>Do you only work in Uttarakhand?</summary><p>No. I work with hotels and travel businesses across India. Everything can be done over phone, WhatsApp and email.</p></details>
-    <details><summary>Can I order banners without a website?</summary><p>Yes. Banners are a separate service, priced per design.</p></details>
+    <h2>Who I work with</h2>
+    <p class="lead">Owner-run businesses with 1 to 25 people. Most of my clients had no website before.</p>
+    <div class="who">
+      <div><b>🩺 Clinics</b><p>Dental, skin &amp; hair, physiotherapy, diagnostic labs, doctors, pet clinics</p></div>
+      <div><b>🍰 Food</b><p>Restaurants, cafés, bakeries, sweet shops</p></div>
+      <div><b>💇 Beauty &amp; fitness</b><p>Salons, spas, gyms</p></div>
+      <div><b>📚 Education</b><p>Coaching classes, tutors, preschools</p></div>
+      <div><b>🏨 Travel &amp; stay</b><p>Travel agencies, hotels, homestays</p></div>
+      <div><b>🛠️ Services</b><p>Real estate, interiors, CAs, photographers, event planners, car service</p></div>
+      <div><b>🛍️ Shops</b><p>Boutiques, clothing stores, jewellers</p></div>
+    </div>
+    <p class="cities">📍 Based in Pune. Working with businesses in Pune, Mumbai, Bengaluru, Hyderabad, Delhi, Ahmedabad, Jaipur, Indore and across India, all over WhatsApp and phone.</p>
   </div>
 </section>
 
+<!-- BANNERS -->
+<section id="banners">
+  <div class="wrap">
+    <h2>Banners for every festival and offer</h2>
+    <p class="lead">Ready to post on Instagram, Facebook, WhatsApp status and Google, or to print.</p>
+    <div class="grid banners">
+      <div class="banner b1"><small>Diwali greetings</small><strong>Happy Diwali from all of us!</strong><em>Your shop name</em></div>
+      <div class="banner b2"><small>Clinic</small><strong>Free dental check-up this Sunday</strong><em>Your clinic name</em></div>
+      <div class="banner b3"><small>Salon offer</small><strong>Bridal makeup packages now booking</strong><em>Your salon name</em></div>
+      <div class="banner b4"><small>New launch</small><strong>Fresh Holi sweets now available</strong><em>Your sweet shop</em></div>
+    </div>
+    <p class="lead" style="margin-top:18px">These are example layouts. Every banner is made with your own photos, logo and offer.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="soft">
+  <div class="wrap">
+    <h2>Questions</h2>
+    <details><summary>I'm not good with computers. Will I have to do anything?</summary><p>No. You send photos and details on WhatsApp, and I do everything, including putting the website live.</p></details>
+    <details><summary>Is there a monthly fee?</summary><p>No monthly design fee. You pay once for the website. Only the domain and hosting are paid yearly to the provider, and I'll help you pick a good, low-cost option.</p></details>
+    <details><summary>Is the free sample really free?</summary><p>Yes. I make a sample homepage with your details. If you don't like it, you don't pay anything.</p></details>
+    <details><summary>I'm already on Justdial / Practo / Google Maps. Why do I need a website?</summary><p>Keep those too. A website is your own page, with no competitors next to you and no charge per enquiry. You can add its link to your Google listing, Instagram and visiting card.</p></details>
+    <details><summary>How long does it take?</summary><p>Usually a few days after I get your photos and details. A bigger website with more pages takes a little longer.</p></details>
+    <details><summary>Can I change things later?</summary><p>Yes. Just send me a message on WhatsApp with what you want changed.</p></details>
+    <details><summary>Can I order only banners?</summary><p>Yes. Banners are a separate service, priced per design.</p></details>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="wrap">
     <h2>Let's get your business online</h2>
-    <p class="lead">Tell me about your hotel, homestay or travel agency, and I'll suggest the right template and send you an exact price.</p>
+    <p class="lead">Send me a WhatsApp message with your business name. I'll reply personally and make your free sample homepage.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="mailto:swarajsirsat677@gmail.com">Email me</a>
-      <!-- To add WhatsApp later: <a class="btn btn-ghost" href="https://wa.me/91XXXXXXXXXX">WhatsApp me</a>
-           (country code + number, no + or spaces) -->
+      <a class="btn btn-wa btn-big" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
+      <a class="btn btn-call btn-big" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call me</a>
     </div>
+    <p class="small">Or email: <a href="mailto:swarajsirsat677@gmail.com">swarajsirsat677@gmail.com</a></p>
   </div>
 </section>
 
+</main>
+
 <footer>
-  <div class="wrap">© 2026 Swaraj Sirsat · Websites &amp; banners for hotels and travel agencies · India</div>
+  <div class="wrap">© 2026 Swaraj Sirsat – Web &amp; Banner Design · Pune, Maharashtra, India</div>
 </footer>
+
+<!-- Sticky buttons on mobile -->
+<div class="mbar">
+  <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="btn btn-call" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call</a>
+</div>
 
 </body>
 </html>
