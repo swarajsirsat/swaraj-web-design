@@ -4,21 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Swaraj Sirsat – Websites & Banners for Local Businesses | Pune</title>
-<meta name="description" content="Websites for clinics, restaurants, salons, shops, hotels and local businesses across India. ₹9,999 – ₹19,999 one-time. Banners from ₹299. Free sample homepage before you pay. Based in Pune.">
+<meta name="description" content="Websites for clinics, restaurants, salons, homestays, shops and students across India. ₹9,999 – ₹19,999 one-time. Banners from ₹299. Free sample homepage before you pay. Based in Pune.">
 <meta property="og:title" content="Swaraj Sirsat – Web & Banner Design">
 <meta property="og:description" content="A website for your business, one-time price, done for you. See a free sample homepage with your own photos before you pay.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0f6b55">
+<meta property="og:image" content="images/restaurant.jpg">
+<meta name="theme-color" content="#0a4d3d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <!--
   ===== EDIT THESE BEFORE GOING LIVE =====
   Find and replace in this file:
     91XXXXXXXXXX   -> your WhatsApp number with 91, no + or spaces (e.g. 919876543210)
     +91XXXXXXXXXX  -> your phone number for the call button (e.g. +919876543210)
-  Project screenshots: put them in an "images" folder (images/ainakul.jpg etc.).
+  Ainakul screenshot: save it as images/ainakul.jpg (1280×800).
+  Sample websites live in the "samples" folder.
   ========================================
 -->
 
@@ -27,7 +29,7 @@
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Swaraj Sirsat – Web & Banner Design",
-  "description": "Done-for-you websites and banner designs for small local businesses across India.",
+  "description": "Done-for-you websites and banner designs for small local businesses and students across India.",
   "areaServed": "IN",
   "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressRegion": "Maharashtra", "addressCountry": "IN" },
   "telephone": "+91XXXXXXXXXX",
@@ -39,46 +41,50 @@
 <style>
   :root {
     --bg: #ffffff;
-    --bg-soft: #f5f7f4;
-    --ink: #13231f;
+    --bg-soft: #f4f7f5;
+    --ink: #10201c;
     --muted: #55655f;
     --brand: #0f6b55;
-    --brand-dark: #0a4d3d;
+    --brand-dark: #08392e;
     --accent: #f2a33a;
     --wa: #25d366;
-    --wa-dark: #128c4a;
     --line: #dde5e2;
-    --radius: 14px;
+    --radius: 18px;
+    --shadow: 0 20px 50px -20px rgba(8, 57, 46, .35);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body { font-family: "Poppins", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; padding-bottom: 72px; }
+  body { font-family: "Poppins", system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.6; padding-bottom: 72px; overflow-x: hidden; }
   @media (min-width: 821px) { body { padding-bottom: 0; } }
   a { color: inherit; }
   img { max-width: 100%; display: block; }
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
-  section { padding: 64px 0; }
-  h1 { font-size: clamp(1.9rem, 5.2vw, 3.1rem); line-height: 1.15; }
-  h2 { font-size: clamp(1.5rem, 3.5vw, 2.1rem); line-height: 1.25; margin-bottom: 10px; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 72px 0; }
+  h1 { font-size: clamp(2rem, 5.4vw, 3.4rem); line-height: 1.12; letter-spacing: -.01em; }
+  h2 { font-size: clamp(1.6rem, 3.8vw, 2.3rem); line-height: 1.2; margin-bottom: 10px; letter-spacing: -.01em; }
   h3 { font-size: 1.08rem; margin-bottom: 6px; }
   .lead { color: var(--muted); max-width: 660px; }
   .soft { background: var(--bg-soft); }
+  .eyebrow { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
 
   /* Buttons */
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 1rem; transition: transform .15s, filter .15s; }
-  .btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 1rem; transition: transform .2s, box-shadow .2s, filter .2s; position: relative; }
+  .btn:hover { transform: translateY(-2px); filter: brightness(1.05); }
   .btn svg { width: 22px; height: 22px; flex: none; }
-  .btn-wa { background: var(--wa); color: #06331b; }
+  .btn-wa { background: var(--wa); color: #06331b; box-shadow: 0 10px 24px -8px rgba(37, 211, 102, .7); }
   .btn-call { background: #fff; color: var(--brand-dark); }
   .btn-outline { border: 2px solid var(--brand); color: var(--brand); }
   .btn-big { padding: 17px 32px; font-size: 1.08rem; }
+  .pulse::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: 0 0 0 0 rgba(37, 211, 102, .6); animation: pulse 2.2s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,.55); } 70% { box-shadow: 0 0 0 16px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
   .actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
   /* Header */
-  header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); backdrop-filter: blur(6px); }
-  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 62px; gap: 12px; }
-  .logo { font-weight: 700; color: var(--brand); text-decoration: none; line-height: 1.2; font-size: .98rem; }
-  .logo span { display: block; font-weight: 500; color: var(--muted); font-size: .75rem; }
+  header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.85); border-bottom: 1px solid rgba(221,229,226,.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 12px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--brand-dark); text-decoration: none; line-height: 1.2; font-size: .98rem; }
+  .logo i { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; font-style: normal; color: #fff; font-weight: 800; background: linear-gradient(135deg, var(--brand), #2bb38a); box-shadow: 0 6px 14px -6px rgba(15,107,85,.8); }
+  .logo span { display: block; font-weight: 500; color: var(--muted); font-size: .74rem; }
   nav { display: flex; align-items: center; gap: 22px; }
   nav a { text-decoration: none; font-size: .93rem; color: var(--muted); }
   nav a:hover { color: var(--brand); }
@@ -86,68 +92,109 @@
   @media (max-width: 820px) { nav a:not(.btn) { display: none; } }
 
   /* Hero */
-  .hero { color: #fff; padding: 72px 0 84px; background: linear-gradient(160deg, #0a4d3d 0%, #0f6b55 60%, #2a8c73 100%); }
-  .tag { display: inline-block; background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 999px; font-size: .85rem; margin-bottom: 18px; }
-  .hero p.sub { margin: 18px 0 28px; max-width: 620px; opacity: .93; font-size: 1.08rem; }
+  .hero { color: #fff; padding: 72px 0 90px; position: relative; overflow: hidden; background: #08392e; }
+  .blob { position: absolute; border-radius: 50%; filter: blur(60px); opacity: .55; animation: drift 14s ease-in-out infinite alternate; pointer-events: none; }
+  .blob.a { width: 420px; height: 420px; background: #1aa37f; top: -120px; left: -80px; }
+  .blob.b { width: 360px; height: 360px; background: #f2a33a; bottom: -160px; right: 10%; opacity: .35; animation-delay: -5s; }
+  .blob.c { width: 300px; height: 300px; background: #3fb1c9; top: 30%; right: -80px; opacity: .35; animation-delay: -9s; }
+  @keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(40px, 30px) scale(1.12); } }
+  .hero-grid { position: relative; display: grid; gap: 40px; align-items: center; grid-template-columns: 1.05fr 1fr; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
+  .tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.18); padding: 6px 14px; border-radius: 999px; font-size: .85rem; margin-bottom: 18px; }
+  .tag b { width: 8px; height: 8px; border-radius: 50%; background: var(--wa); box-shadow: 0 0 0 4px rgba(37,211,102,.25); }
+  .hero h1 .hl { background: linear-gradient(90deg, #ffd27a, #f2a33a); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .hero p.sub { margin: 18px 0 28px; max-width: 560px; opacity: .92; font-size: 1.06rem; }
   .hero .note { margin-top: 18px; font-size: .9rem; opacity: .85; }
-  .hero .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; }
-  .hero .chips span { background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); padding: 5px 12px; border-radius: 999px; font-size: .82rem; }
+
+  /* 3D stage */
+  .stage { position: relative; height: 440px; perspective: 1400px; }
+  .stage-inner { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(calc(8deg + var(--ry, 0deg))) rotateY(calc(-16deg + var(--rx, 0deg))); transition: transform .4s ease-out; }
+  .dev { position: absolute; border-radius: 16px; overflow: hidden; background: #fff; box-shadow: 0 40px 80px -20px rgba(0,0,0,.6); }
+  .dev img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+  .dev.laptop { width: 82%; aspect-ratio: 16/10; left: 4%; top: 12%; transform: translateZ(0); border: 8px solid #1b2522; border-radius: 14px; animation: float 7s ease-in-out infinite; }
+  .dev.phone { width: 30%; aspect-ratio: 9/18; border: 6px solid #111; border-radius: 26px; }
+  .dev.p1 { right: 0; top: 30%; transform: translateZ(90px); animation: float 6s ease-in-out infinite -2s; }
+  .dev.p2 { left: 8%; bottom: -2%; width: 25%; transform: translateZ(110px); animation: float 8s ease-in-out infinite -4s; }
+  @keyframes float { 0%,100% { translate: 0 0; } 50% { translate: 0 -14px; } }
+  .chip { position: absolute; background: #fff; color: var(--ink); font-size: .8rem; font-weight: 600; padding: 8px 14px; border-radius: 12px; box-shadow: 0 14px 30px -10px rgba(0,0,0,.4); display: flex; gap: 8px; align-items: center; white-space: nowrap; }
+  .chip.c1 { top: 2%; right: 6%; transform: translateZ(160px); animation: float 5s ease-in-out infinite; }
+  .chip.c2 { bottom: 10%; right: 18%; transform: translateZ(180px); animation: float 6s ease-in-out infinite -3s; }
+  @media (max-width: 900px) { .stage { height: 340px; max-width: 520px; width: 100%; margin: 0 auto; } }
+  @media (max-width: 480px) { .stage { height: 270px; } .chip { font-size: .7rem; padding: 6px 10px; } }
+
+  /* Marquee */
+  .marquee { background: var(--brand-dark); color: rgba(255,255,255,.85); overflow: hidden; padding: 14px 0; border-top: 1px solid rgba(255,255,255,.08); }
+  .marquee .track { display: flex; gap: 40px; width: max-content; animation: scroll 38s linear infinite; font-weight: 500; font-size: .95rem; }
+  .marquee span { white-space: nowrap; }
+  @keyframes scroll { to { transform: translateX(-50%); } }
 
   /* Grids & cards */
   .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 32px; }
   .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; transition: transform .25s, box-shadow .25s; }
+  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
   .card p { color: var(--muted); font-size: .95rem; }
-  .icon { font-size: 1.7rem; margin-bottom: 8px; }
-
-  /* Problem */
-  .problem .card { border-left: 4px solid var(--accent); }
+  .problem .card { border-top: 4px solid var(--accent); }
 
   /* Offer strip */
-  .offer { background: #fff6e8; border: 2px dashed var(--accent); border-radius: var(--radius); padding: 28px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; }
+  .offer { background: linear-gradient(135deg, #fff6e8, #ffe9c7); border-radius: var(--radius); padding: 32px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; position: relative; overflow: hidden; }
+  .offer::before { content: "🎁"; position: absolute; right: -10px; top: -20px; font-size: 7rem; opacity: .12; transform: rotate(-12deg); }
   .offer h2 { margin-bottom: 6px; }
   .offer p { color: #5c4a2b; max-width: 620px; }
 
+  /* Portfolio (3D tilt) */
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px; }
+  .filters button { font: inherit; font-size: .88rem; border: 1px solid var(--line); background: #fff; padding: 7px 16px; border-radius: 999px; cursor: pointer; color: var(--muted); transition: all .2s; }
+  .filters button.on { background: var(--brand); color: #fff; border-color: var(--brand); }
+  .works { display: grid; gap: 26px; grid-template-columns: 1fr; margin-top: 26px; perspective: 1200px; }
+  @media (min-width: 700px) { .works { grid-template-columns: repeat(2, 1fr); } }
+  .work { position: relative; border-radius: var(--radius); background: #fff; border: 1px solid var(--line); text-decoration: none; color: inherit; display: flex; flex-direction: column;
+          transform-style: preserve-3d; transform: rotateX(var(--tx, 0deg)) rotateY(var(--ty, 0deg)); transition: transform .35s ease-out, box-shadow .35s; will-change: transform; }
+  .work:hover { box-shadow: 0 30px 60px -25px rgba(8,57,46,.45); }
+  .work .shot { aspect-ratio: 16 / 10; border-radius: var(--radius) var(--radius) 0 0; overflow: hidden; position: relative; background: #e9eeec; }
+  .work .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 6s ease; }
+  .work:hover .shot img { transform: translateY(-6%); }
+  .work .shot .fallback { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #1f5e8c, #4fa3c7); }
+  .work .glare { position: absolute; inset: 0; border-radius: var(--radius); pointer-events: none; background: radial-gradient(circle at var(--gx, 50%) var(--gy, 50%), rgba(255,255,255,.35), transparent 50%); opacity: 0; transition: opacity .3s; }
+  .work:hover .glare { opacity: 1; }
+  .work .info { padding: 18px 20px 22px; }
+  .work .info p { color: var(--muted); font-size: .92rem; }
+  .work .more { color: var(--brand); font-weight: 600; font-size: .9rem; display: inline-block; margin-top: 10px; }
+  .label { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 3px 10px; border-radius: 999px; margin-bottom: 8px; }
+  .label.live { background: #dff7ea; color: #0f6b3a; }
+  .label.sample { background: #eef0ff; color: #4a3fb5; }
+  .work.hide { display: none; }
+
   /* Steps */
-  .step-num { width: 40px; height: 40px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: 700; margin-bottom: 12px; }
+  .steps { counter-reset: s; position: relative; }
+  .step-num { width: 46px; height: 46px; border-radius: 14px; background: linear-gradient(135deg, var(--brand), #2bb38a); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 1.1rem; margin-bottom: 14px; box-shadow: 0 10px 20px -8px rgba(15,107,85,.7); transform: rotate(-6deg); }
 
   /* Pricing */
-  .price { font-size: 2rem; font-weight: 700; color: var(--brand); margin: 8px 0 2px; }
+  .price { font-size: 2.1rem; font-weight: 800; color: var(--brand); margin: 8px 0 2px; }
   .price-note { color: var(--muted); font-size: .9rem; margin-bottom: 16px; }
   ul.check { list-style: none; margin-bottom: 20px; }
-  ul.check li { padding: 6px 0 6px 26px; position: relative; font-size: .95rem; }
-  ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--brand); font-weight: 700; }
+  ul.check li { padding: 6px 0 6px 28px; position: relative; font-size: .95rem; }
+  ul.check li::before { content: "✓"; position: absolute; left: 0; top: 8px; width: 18px; height: 18px; border-radius: 50%; background: #dff3ec; color: var(--brand); font-weight: 700; font-size: .7rem; display: grid; place-items: center; }
   .featured { border: 2px solid var(--brand); position: relative; }
-  .badge { position: absolute; top: -12px; left: 24px; background: var(--brand); color: #fff; font-size: .75rem; font-weight: 600; padding: 3px 12px; border-radius: 999px; }
+  .badge { position: absolute; top: -13px; left: 24px; background: var(--brand); color: #fff; font-size: .75rem; font-weight: 600; padding: 3px 12px; border-radius: 999px; }
   .pricing .card { display: flex; flex-direction: column; }
   .pricing .card .btn { margin-top: auto; align-self: flex-start; }
 
-  /* Work */
-  .work { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: #fff; display: flex; flex-direction: column; }
-  .work .bar { height: 26px; background: #e9eeec; display: flex; align-items: center; gap: 6px; padding: 0 10px; }
-  .work .bar i { width: 9px; height: 9px; border-radius: 50%; background: #c5cfcb; display: block; }
-  .work .shot { aspect-ratio: 16 / 10; position: relative; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; }
-  .work .shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
-  .work .shot b { font-size: 1.1rem; position: relative; }
-  .work .shot span { font-size: .8rem; opacity: .9; position: relative; }
-  .work .info { padding: 16px 18px 20px; }
-  .work .info p { color: var(--muted); font-size: .92rem; }
-  .work .info a { color: var(--brand); font-weight: 600; font-size: .9rem; text-decoration: none; display: inline-block; margin-top: 8px; }
-  .label { display: inline-block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); background: var(--bg-soft); padding: 2px 10px; border-radius: 999px; margin-bottom: 8px; }
-  .g1 { background: linear-gradient(135deg, #1f5e8c, #4fa3c7); }
-  .g2 { background: linear-gradient(135deg, #7a3b12, #d27a2c); }
-  .g3 { background: linear-gradient(135deg, #6b2b5e, #c86fa8); }
-
   /* Who */
   .who { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
-  .who div { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; }
+  .who div { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; transition: transform .25s, box-shadow .25s; }
+  .who div:hover { transform: translateY(-4px) rotate(-.5deg); box-shadow: var(--shadow); }
   .who b { display: block; margin-bottom: 4px; }
   .who p { color: var(--muted); font-size: .9rem; }
+  .who .new { border: 2px dashed #7c5cff; }
   .cities { margin-top: 22px; color: var(--muted); font-size: .95rem; }
 
-  /* Banners */
-  .banners { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
-  .banner { border-radius: var(--radius); aspect-ratio: 1 / 1; padding: 18px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+  /* Banners (3D fan) */
+  .banners { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); margin-top: 32px; perspective: 1000px; }
+  .banner { border-radius: var(--radius); aspect-ratio: 1 / 1; padding: 18px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 18px 36px -18px rgba(0,0,0,.5); transition: transform .4s; }
+  .banner:nth-child(odd) { transform: rotateY(8deg) rotateZ(-1.5deg); }
+  .banner:nth-child(even) { transform: rotateY(-8deg) rotateZ(1.5deg); }
+  .banner:hover { transform: rotateY(0) rotateZ(0) scale(1.04); }
   .banner small { opacity: .85; letter-spacing: .08em; text-transform: uppercase; font-size: .68rem; }
   .banner strong { font-size: 1.1rem; line-height: 1.25; }
   .banner em { font-style: normal; background: rgba(255,255,255,.22); align-self: flex-start; padding: 3px 10px; border-radius: 999px; font-size: .74rem; }
@@ -158,25 +205,41 @@
 
   /* FAQ */
   details { border-bottom: 1px solid var(--line); padding: 16px 0; }
-  summary { cursor: pointer; font-weight: 600; }
+  summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--brand); font-size: 1.3rem; line-height: 1; transition: transform .25s; }
+  details[open] summary::after { transform: rotate(45deg); }
   details p { color: var(--muted); margin-top: 8px; }
 
   /* Contact */
-  .contact { background: var(--brand-dark); color: #fff; text-align: center; }
+  .contact { background: var(--brand-dark); color: #fff; text-align: center; position: relative; overflow: hidden; }
   .contact .lead { color: rgba(255,255,255,.88); margin: 0 auto 28px; }
   .contact .actions { justify-content: center; }
   .contact .small { margin-top: 22px; font-size: .9rem; opacity: .85; }
   .contact .small a { color: #fff; }
+  .contact .wrap { position: relative; }
   footer { padding: 24px 0; text-align: center; color: var(--muted); font-size: .85rem; }
 
   /* Sticky mobile bar */
-  .mbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: #fff; border-top: 1px solid var(--line); box-shadow: 0 -4px 16px rgba(0,0,0,.06); }
+  .mbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(255,255,255,.95); backdrop-filter: blur(8px); border-top: 1px solid var(--line); box-shadow: 0 -4px 16px rgba(0,0,0,.06); }
   .mbar .btn { padding: 12px 10px; font-size: .95rem; }
   .mbar .btn-call { background: var(--brand); color: #fff; }
   @media (min-width: 821px) { .mbar { display: none; } }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; transition-delay: var(--d, 0s); }
+  .reveal.in { opacity: 1; transform: none; }
+  .js-off .reveal { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .reveal { opacity: 1; transform: none; }
+    html { scroll-behavior: auto; }
+  }
 </style>
 </head>
-<body>
+<body class="js-off">
+<script>document.body.classList.remove('js-off');</script>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3z"/></symbol>
@@ -185,9 +248,9 @@
 
 <header>
   <div class="wrap">
-    <a href="#top" class="logo">Swaraj Sirsat<span>Web &amp; Banner Design · Pune</span></a>
+    <a href="#top" class="logo"><i>S</i><div>Swaraj Sirsat<span>Web &amp; Banner Design · Pune</span></div></a>
     <nav>
-      <a href="#work">My work</a>
+      <a href="#work">Our work</a>
       <a href="#pricing">Prices</a>
       <a href="#how">How it works</a>
       <a href="#faq">Questions</a>
@@ -200,35 +263,117 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap">
-    <span class="tag">For clinics, shops, restaurants, salons &amp; local businesses across India</span>
-    <h1>A proper website for your business. One-time price. I do all the work.</h1>
-    <p class="sub">Namaste ji. I'm Swaraj, a web designer from Pune. You send your photos and details on WhatsApp, and I make your website, show you a preview, and put it live. Customers can find you on Google and contact you in one tap.</p>
-    <div class="actions">
-      <a class="btn btn-wa btn-big" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
-      <a class="btn btn-call btn-big" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call me</a>
+  <span class="blob a"></span><span class="blob b"></span><span class="blob c"></span>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag reveal"><b></b>Taking new projects · Pune &amp; all India</span>
+      <h1 class="reveal" style="--d:.1s">A proper website for your business. <span class="hl">One-time price.</span> I do all the work.</h1>
+      <p class="sub reveal" style="--d:.2s">Namaste ji. I'm Swaraj, a web designer from Pune. You send your photos and details on WhatsApp, and I make your website, show you a preview, and put it live. Customers find you on Google and contact you in one tap.</p>
+      <div class="actions reveal" style="--d:.3s">
+        <a class="btn btn-wa btn-big pulse" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
+        <a class="btn btn-call btn-big" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call me</a>
+      </div>
+      <p class="note reveal" style="--d:.4s">Websites ₹9,999 – ₹19,999 one-time · Banners ₹299 – ₹499 · Free sample homepage before you pay</p>
     </div>
-    <p class="note">Websites ₹9,999 – ₹19,999 one-time · Banners ₹299 – ₹499 · Free sample homepage before you pay</p>
+
+    <div class="stage reveal" style="--d:.2s" id="stage" aria-hidden="true">
+      <div class="stage-inner">
+        <div class="dev laptop"><img src="images/restaurant.jpg" alt=""></div>
+        <div class="dev phone p1"><img src="images/homestay-phone.jpg" alt=""></div>
+        <div class="dev phone p2"><img src="images/student-cv-phone.jpg" alt=""></div>
+        <div class="chip c1">💬 New enquiry on WhatsApp</div>
+        <div class="chip c2">📍 Found on Google Maps</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>🩺 Clinics</span><span>🍛 Restaurants</span><span>🏡 Homestays</span><span>💇 Salons</span><span>🏋️ Gyms</span><span>📚 Coaching classes</span><span>🎓 Student CVs</span><span>🏨 Hotels</span><span>🧁 Bakeries</span><span>💍 Jewellers</span><span>📸 Photographers</span><span>🏠 Real estate</span><span>🚗 Car service</span>
+    <span>🩺 Clinics</span><span>🍛 Restaurants</span><span>🏡 Homestays</span><span>💇 Salons</span><span>🏋️ Gyms</span><span>📚 Coaching classes</span><span>🎓 Student CVs</span><span>🏨 Hotels</span><span>🧁 Bakeries</span><span>💍 Jewellers</span><span>📸 Photographers</span><span>🏠 Real estate</span><span>🚗 Car service</span>
+  </div>
+</div>
+
+<!-- WORK / PORTFOLIO -->
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow reveal">Portfolio</span>
+    <h2 class="reveal">Our work</h2>
+    <p class="lead reveal">A live website I've built, plus sample websites for different kinds of businesses. Tap any one to open it and see how it works on your phone.</p>
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+      <button class="on" data-f="all">All</button>
+      <button data-f="live">Live websites</button>
+      <button data-f="business">Business samples</button>
+      <button data-f="student">Student CV</button>
+    </div>
+    <div class="works">
+      <a class="work reveal" data-cat="live" href="https://ainakul.com" target="_blank" rel="noopener">
+        <div class="shot">
+          <div class="fallback">ainakul.com</div>
+          <!-- Save a screenshot as images/ainakul.jpg (1280×800) and it will show here -->
+          <img src="images/ainakul.jpg" alt="Screenshot of the Ainakul website" loading="lazy" onerror="this.remove()" style="position:relative">
+        </div>
+        <div class="info">
+          <span class="label live">Live website</span>
+          <h3>Ainakul</h3>
+          <p>A website I designed and built: mobile-friendly, fast, and easy for customers to contact the business.</p>
+          <span class="more">Visit ainakul.com →</span>
+        </div>
+        <span class="glare"></span>
+      </a>
+      <a class="work reveal" style="--d:.1s" data-cat="business" href="samples/homestay.html" target="_blank" rel="noopener">
+        <div class="shot"><img src="images/homestay.jpg" alt="Sample homestay website" loading="lazy"></div>
+        <div class="info">
+          <span class="label sample">Sample design</span>
+          <h3>Homestay website</h3>
+          <p>Rooms with prices, home food, guest reviews, map and a "Book on WhatsApp" button. Also suits hotels and resorts.</p>
+          <span class="more">Open sample →</span>
+        </div>
+        <span class="glare"></span>
+      </a>
+      <a class="work reveal" style="--d:.2s" data-cat="business" href="samples/restaurant.html" target="_blank" rel="noopener">
+        <div class="shot"><img src="images/restaurant.jpg" alt="Sample restaurant website" loading="lazy"></div>
+        <div class="info">
+          <span class="label sample">Sample design</span>
+          <h3>Restaurant website</h3>
+          <p>Menu with prices, timings, home delivery info and "Order on WhatsApp". Also suits cafés, bakeries and sweet shops.</p>
+          <span class="more">Open sample →</span>
+        </div>
+        <span class="glare"></span>
+      </a>
+      <a class="work reveal" style="--d:.3s" data-cat="student" href="samples/student-cv.html" target="_blank" rel="noopener">
+        <div class="shot"><img src="images/student-cv.jpg" alt="Sample student CV website" loading="lazy"></div>
+        <div class="info">
+          <span class="label sample">Sample design</span>
+          <h3>Student CV website</h3>
+          <p>A personal website for students and freshers: skills, projects, education and a CV download. Share one link with companies.</p>
+          <span class="more">Open sample →</span>
+        </div>
+        <span class="glare"></span>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- PROBLEM -->
-<section class="problem">
+<section class="problem soft">
   <div class="wrap">
-    <h2>Your customers search on their phone before they call</h2>
-    <p class="lead">"Dentist near me." "Cake shop in Kothrud." "Homestay in Lonavala." If they can't find you, or your page looks old, they call the next business.</p>
+    <span class="eyebrow reveal">Why a website</span>
+    <h2 class="reveal">Your customers search on their phone before they call</h2>
+    <p class="lead reveal">"Dentist near me." "Cake shop in Kothrud." "Homestay in Lonavala." If they can't find you, or your page looks old, they call the next business.</p>
     <div class="grid">
-      <div class="card"><h3>No website? You look less trusted</h3><p>A business with its own website looks established. Customers feel safer calling you.</p></div>
-      <div class="card"><h3>Listing sites show your competitors</h3><p>Justdial, Practo, Sulekha and booking sites often charge per lead or per booking, and they show other businesses on the same page as you.</p></div>
-      <div class="card"><h3>Your own website brings enquiries straight to you</h3><p>Your timings, photos, services and a WhatsApp button, all in one place. You pay once, and every enquiry comes to you.</p></div>
+      <div class="card reveal"><h3>No website? You look less trusted</h3><p>A business with its own website looks established. Customers feel safer calling you.</p></div>
+      <div class="card reveal" style="--d:.1s"><h3>Listing sites show your competitors</h3><p>Justdial, Practo, Sulekha and booking sites often charge per lead or per booking, and they show other businesses on the same page as you.</p></div>
+      <div class="card reveal" style="--d:.2s"><h3>Your own website brings enquiries straight to you</h3><p>Your timings, photos, services and a WhatsApp button, all in one place. You pay once, and every enquiry comes to you.</p></div>
     </div>
   </div>
 </section>
 
 <!-- FREE SAMPLE OFFER -->
-<section class="soft" style="padding:48px 0">
+<section style="padding:56px 0">
   <div class="wrap">
-    <div class="offer">
+    <div class="offer reveal">
       <div>
         <h2>See your website before you pay anything</h2>
         <p>Send me your business name and a few photos. I'll make a free sample homepage with your own details so you can see how it looks. If you like it, we go ahead. If not, no problem at all.</p>
@@ -238,54 +383,14 @@
   </div>
 </section>
 
-<!-- WORK -->
-<section id="work">
-  <div class="wrap">
-    <h2>My work</h2>
-    <p class="lead">Websites I have built, plus sample designs from my ready templates.</p>
-    <div class="grid">
-      <div class="work">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <!-- Save a screenshot as images/ainakul.jpg (1600×1000 works well) -->
-        <div class="shot g1"><img src="images/ainakul.jpg" alt="Screenshot of the Ainakul website" loading="lazy" onerror="this.remove()"></div>
-        <div class="info">
-          <span class="label">Live website</span>
-          <h3>Ainakul</h3>
-          <!-- EDIT: one line about what Ainakul is and who it's for -->
-          <p>A website I designed and built: mobile-friendly, fast, and easy for customers to contact the business.</p>
-          <a href="https://ainakul.com" target="_blank" rel="noopener">Visit ainakul.com →</a>
-        </div>
-      </div>
-      <!-- Copy the block above for Project 2 and Project 3. Until then, these show template samples. -->
-      <div class="work">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="shot g2"><b>Clinic template</b><span>Doctor profile · Treatments · Timings · Book appointment</span></div>
-        <div class="info">
-          <span class="label">Sample design</span>
-          <h3>For clinics &amp; doctors</h3>
-          <p>Dental, skin, physio and small clinics. Patients see your timings and treatments, and book on WhatsApp.</p>
-        </div>
-      </div>
-      <div class="work">
-        <div class="bar"><i></i><i></i><i></i></div>
-        <div class="shot g3"><b>Restaurant &amp; café template</b><span>Menu · Photos · Timings · Order on WhatsApp</span></div>
-        <div class="info">
-          <span class="label">Sample design</span>
-          <h3>For food businesses</h3>
-          <p>Restaurants, cafés, bakeries and sweet shops. Your menu, photos and location, with one-tap ordering.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- PRICING -->
 <section id="pricing" class="soft pricing">
   <div class="wrap">
-    <h2>Simple, one-time prices</h2>
-    <p class="lead">No monthly design fees. You'll know the exact price before I start.</p>
+    <span class="eyebrow reveal">Prices</span>
+    <h2 class="reveal">Simple, one-time prices</h2>
+    <p class="lead reveal">No monthly design fees. You'll know the exact price before I start.</p>
     <div class="grid grid-2">
-      <div class="card featured">
+      <div class="card featured reveal">
         <span class="badge">Most popular</span>
         <h3>Done-for-you website</h3>
         <div class="price">₹9,999 – ₹19,999</div>
@@ -302,7 +407,7 @@
         </ul>
         <a class="btn btn-wa" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20to%20know%20the%20price%20of%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Ask for exact price</a>
       </div>
-      <div class="card">
+      <div class="card reveal" style="--d:.1s">
         <h3>Banner design</h3>
         <div class="price">₹299 – ₹499</div>
         <p class="price-note">Per banner, depending on size and detail.</p>
@@ -316,19 +421,20 @@
         <a class="btn btn-outline" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20need%20a%20banner%20design." target="_blank" rel="noopener">Order a banner</a>
       </div>
     </div>
-    <p class="lead" style="margin-top:20px">Domain name and hosting are paid separately to the provider. I'll help you choose and set them up.</p>
+    <p class="lead reveal" style="margin-top:20px">Domain name and hosting are paid separately to the provider. I'll help you choose and set them up. Student CV websites: ask me on WhatsApp for the price.</p>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
 <section id="how">
   <div class="wrap">
-    <h2>How it works</h2>
-    <p class="lead">Three simple steps. No technical work on your side.</p>
-    <div class="grid">
-      <div class="card"><div class="step-num">1</div><h3>Send photos on WhatsApp</h3><p>Send your business name, photos, services, timings and address. Whatever you have is fine.</p></div>
-      <div class="card"><div class="step-num">2</div><h3>See a preview</h3><p>I make your website and send you a link. Tell me what to change and I'll change it.</p></div>
-      <div class="card"><div class="step-num">3</div><h3>Go live</h3><p>Once you're happy, I put it live. Share the link with your customers and on Google.</p></div>
+    <span class="eyebrow reveal">How it works</span>
+    <h2 class="reveal">Three simple steps</h2>
+    <p class="lead reveal">No technical work on your side.</p>
+    <div class="grid steps">
+      <div class="card reveal"><div class="step-num">1</div><h3>Send photos on WhatsApp</h3><p>Send your business name, photos, services, timings and address. Whatever you have is fine.</p></div>
+      <div class="card reveal" style="--d:.12s"><div class="step-num">2</div><h3>See a preview</h3><p>I make your website and send you a link. Tell me what to change and I'll change it.</p></div>
+      <div class="card reveal" style="--d:.24s"><div class="step-num">3</div><h3>Go live</h3><p>Once you're happy, I put it live. Share the link with your customers and on Google.</p></div>
     </div>
   </div>
 </section>
@@ -336,60 +442,68 @@
 <!-- WHO -->
 <section class="soft">
   <div class="wrap">
-    <h2>Who I work with</h2>
-    <p class="lead">Owner-run businesses with 1 to 25 people. Most of my clients had no website before.</p>
+    <span class="eyebrow reveal">Who I work with</span>
+    <h2 class="reveal">Made for owner-run businesses</h2>
+    <p class="lead reveal">Businesses with 1 to 25 people. Many of them have no website yet.</p>
     <div class="who">
-      <div><b>🩺 Clinics</b><p>Dental, skin &amp; hair, physiotherapy, diagnostic labs, doctors, pet clinics</p></div>
-      <div><b>🍰 Food</b><p>Restaurants, cafés, bakeries, sweet shops</p></div>
-      <div><b>💇 Beauty &amp; fitness</b><p>Salons, spas, gyms</p></div>
-      <div><b>📚 Education</b><p>Coaching classes, tutors, preschools</p></div>
-      <div><b>🏨 Travel &amp; stay</b><p>Travel agencies, hotels, homestays</p></div>
-      <div><b>🛠️ Services</b><p>Real estate, interiors, CAs, photographers, event planners, car service</p></div>
-      <div><b>🛍️ Shops</b><p>Boutiques, clothing stores, jewellers</p></div>
+      <div class="reveal"><b>🩺 Clinics</b><p>Dental, skin &amp; hair, physiotherapy, diagnostic labs, doctors, pet clinics</p></div>
+      <div class="reveal" style="--d:.05s"><b>🍰 Food</b><p>Restaurants, cafés, bakeries, sweet shops</p></div>
+      <div class="reveal" style="--d:.1s"><b>💇 Beauty &amp; fitness</b><p>Salons, spas, gyms</p></div>
+      <div class="reveal" style="--d:.15s"><b>📚 Education</b><p>Coaching classes, tutors, preschools</p></div>
+      <div class="reveal"><b>🏨 Travel &amp; stay</b><p>Travel agencies, hotels, homestays</p></div>
+      <div class="reveal" style="--d:.05s"><b>🛠️ Services</b><p>Real estate, interiors, CAs, photographers, event planners, car service</p></div>
+      <div class="reveal" style="--d:.1s"><b>🛍️ Shops</b><p>Boutiques, clothing stores, jewellers</p></div>
+      <div class="reveal new" style="--d:.15s"><b>🎓 Students &amp; freshers</b><p>A personal CV website to share with colleges and companies</p></div>
     </div>
-    <p class="cities">📍 Based in Pune. Working with businesses in Pune, Mumbai, Bengaluru, Hyderabad, Delhi, Ahmedabad, Jaipur, Indore and across India, all over WhatsApp and phone.</p>
+    <p class="cities reveal">📍 Based in Pune. Working with businesses in Pune, Mumbai, Bengaluru, Hyderabad, Delhi, Ahmedabad, Jaipur, Indore and across India, all over WhatsApp and phone.</p>
   </div>
 </section>
 
 <!-- BANNERS -->
 <section id="banners">
   <div class="wrap">
-    <h2>Banners for every festival and offer</h2>
-    <p class="lead">Ready to post on Instagram, Facebook, WhatsApp status and Google, or to print.</p>
-    <div class="grid banners">
-      <div class="banner b1"><small>Diwali greetings</small><strong>Happy Diwali from all of us!</strong><em>Your shop name</em></div>
-      <div class="banner b2"><small>Clinic</small><strong>Free dental check-up this Sunday</strong><em>Your clinic name</em></div>
-      <div class="banner b3"><small>Salon offer</small><strong>Bridal makeup packages now booking</strong><em>Your salon name</em></div>
-      <div class="banner b4"><small>New launch</small><strong>Fresh Holi sweets now available</strong><em>Your sweet shop</em></div>
+    <span class="eyebrow reveal">Banners</span>
+    <h2 class="reveal">Banners for every festival and offer</h2>
+    <p class="lead reveal">Ready to post on Instagram, Facebook, WhatsApp status and Google, or to print.</p>
+    <div class="banners">
+      <div class="banner b1 reveal"><small>Diwali greetings</small><strong>Happy Diwali from all of us!</strong><em>Your shop name</em></div>
+      <div class="banner b2 reveal" style="--d:.08s"><small>Clinic</small><strong>Free dental check-up this Sunday</strong><em>Your clinic name</em></div>
+      <div class="banner b3 reveal" style="--d:.16s"><small>Salon offer</small><strong>Bridal makeup packages now booking</strong><em>Your salon name</em></div>
+      <div class="banner b4 reveal" style="--d:.24s"><small>New launch</small><strong>Fresh Holi sweets now available</strong><em>Your sweet shop</em></div>
     </div>
-    <p class="lead" style="margin-top:18px">These are example layouts. Every banner is made with your own photos, logo and offer.</p>
+    <p class="lead reveal" style="margin-top:18px">These are example layouts. Every banner is made with your own photos, logo and offer.</p>
   </div>
 </section>
 
 <!-- FAQ -->
 <section id="faq" class="soft">
   <div class="wrap">
-    <h2>Questions</h2>
-    <details><summary>I'm not good with computers. Will I have to do anything?</summary><p>No. You send photos and details on WhatsApp, and I do everything, including putting the website live.</p></details>
-    <details><summary>Is there a monthly fee?</summary><p>No monthly design fee. You pay once for the website. Only the domain and hosting are paid yearly to the provider, and I'll help you pick a good, low-cost option.</p></details>
-    <details><summary>Is the free sample really free?</summary><p>Yes. I make a sample homepage with your details. If you don't like it, you don't pay anything.</p></details>
-    <details><summary>I'm already on Justdial / Practo / Google Maps. Why do I need a website?</summary><p>Keep those too. A website is your own page, with no competitors next to you and no charge per enquiry. You can add its link to your Google listing, Instagram and visiting card.</p></details>
-    <details><summary>How long does it take?</summary><p>Usually a few days after I get your photos and details. A bigger website with more pages takes a little longer.</p></details>
-    <details><summary>Can I change things later?</summary><p>Yes. Just send me a message on WhatsApp with what you want changed.</p></details>
-    <details><summary>Can I order only banners?</summary><p>Yes. Banners are a separate service, priced per design.</p></details>
+    <span class="eyebrow reveal">Questions</span>
+    <h2 class="reveal">Common questions</h2>
+    <div class="reveal">
+      <details><summary>I'm not good with computers. Will I have to do anything?</summary><p>No. You send photos and details on WhatsApp, and I do everything, including putting the website live.</p></details>
+      <details><summary>Is there a monthly fee?</summary><p>No monthly design fee. You pay once for the website. Only the domain and hosting are paid yearly to the provider, and I'll help you pick a good, low-cost option.</p></details>
+      <details><summary>Is the free sample really free?</summary><p>Yes. I make a sample homepage with your details. If you don't like it, you don't pay anything.</p></details>
+      <details><summary>I'm already on Justdial / Practo / Google Maps. Why do I need a website?</summary><p>Keep those too. A website is your own page, with no competitors next to you and no charge per enquiry. You can add its link to your Google listing, Instagram and visiting card.</p></details>
+      <details><summary>Do you make CV websites for students?</summary><p>Yes. A simple personal website with your skills, projects, education and a CV download button. Send me a WhatsApp message for the price.</p></details>
+      <details><summary>How long does it take?</summary><p>Usually a few days after I get your photos and details. A bigger website with more pages takes a little longer.</p></details>
+      <details><summary>Can I change things later?</summary><p>Yes. Just send me a message on WhatsApp with what you want changed.</p></details>
+      <details><summary>Can I order only banners?</summary><p>Yes. Banners are a separate service, priced per design.</p></details>
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
+  <span class="blob a" style="top:auto;bottom:-200px;left:-100px"></span><span class="blob b" style="bottom:auto;top:-180px"></span>
   <div class="wrap">
-    <h2>Let's get your business online</h2>
-    <p class="lead">Send me a WhatsApp message with your business name. I'll reply personally and make your free sample homepage.</p>
-    <div class="actions">
-      <a class="btn btn-wa btn-big" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
+    <h2 class="reveal">Let's get your business online</h2>
+    <p class="lead reveal">Send me a WhatsApp message with your business name. I'll reply personally and make your free sample homepage.</p>
+    <div class="actions reveal">
+      <a class="btn btn-wa btn-big pulse" href="https://wa.me/91XXXXXXXXXX?text=Namaste%20Swaraj%20ji%2C%20I%20want%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp me</a>
       <a class="btn btn-call btn-big" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call me</a>
     </div>
-    <p class="small">Or email: <a href="mailto:swarajsirsat677@gmail.com">swarajsirsat677@gmail.com</a></p>
+    <p class="small reveal">Or email: <a href="mailto:swarajsirsat677@gmail.com">swarajsirsat677@gmail.com</a></p>
   </div>
 </section>
 
@@ -405,5 +519,72 @@
   <a class="btn btn-call" href="tel:+91XXXXXXXXXX"><svg><use href="#i-call"/></svg>Call</a>
 </div>
 
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll reveal
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  var fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (reduce) return;
+
+  // Hero 3D parallax
+  var stage = document.getElementById('stage');
+  if (stage && fine) {
+    var hero = stage.closest('.hero');
+    hero.addEventListener('pointermove', function (e) {
+      var r = hero.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      stage.style.setProperty('--rx', (x * 14) + 'deg');
+      stage.style.setProperty('--ry', (-y * 10) + 'deg');
+    });
+    hero.addEventListener('pointerleave', function () {
+      stage.style.setProperty('--rx', '0deg');
+      stage.style.setProperty('--ry', '0deg');
+    });
+  }
+
+  // Portfolio 3D tilt
+  if (fine) {
+    document.querySelectorAll('.work').forEach(function (card) {
+      card.addEventListener('pointermove', function (e) {
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width;
+        var y = (e.clientY - r.top) / r.height;
+        card.style.setProperty('--ty', ((x - 0.5) * 14) + 'deg');
+        card.style.setProperty('--tx', ((0.5 - y) * 12) + 'deg');
+        card.style.setProperty('--gx', (x * 100) + '%');
+        card.style.setProperty('--gy', (y * 100) + '%');
+      });
+      card.addEventListener('pointerleave', function () {
+        card.style.setProperty('--tx', '0deg');
+        card.style.setProperty('--ty', '0deg');
+      });
+    });
+  }
+})();
+
+// Portfolio filter
+document.querySelectorAll('.filters button').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    document.querySelectorAll('.filters button').forEach(function (b) { b.classList.remove('on'); });
+    btn.classList.add('on');
+    var f = btn.getAttribute('data-f');
+    document.querySelectorAll('.work').forEach(function (w) {
+      w.classList.toggle('hide', f !== 'all' && w.getAttribute('data-cat') !== f);
+    });
+  });
+});
+</script>
 </body>
 </html>

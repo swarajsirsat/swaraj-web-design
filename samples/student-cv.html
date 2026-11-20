@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aarav Kulkarni – Sample Student CV Website</title>
+<meta name="description" content="Sample student CV website designed by Swaraj Sirsat – Web & Banner Design.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0d1020; --card:#161a33; --ink:#e9ecff; --muted:#9aa3c7; --a:#7c5cff; --b:#22d3ee; --line:#262b4d; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Poppins",system-ui,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+  .demo { background:#000; color:#ccc; text-align:center; font-size:.8rem; padding:6px 12px; }
+  .demo a { color:var(--b); }
+  .wrap { max-width:960px; margin:0 auto; padding:0 16px; }
+  section { padding:52px 0; }
+  h2 { font-size:1.5rem; margin-bottom:18px; }
+  h2::before { content:"// "; color:var(--a); }
+  .muted { color:var(--muted); }
+  .hero { padding:72px 0 56px; background:radial-gradient(circle at 15% 20%, rgba(124,92,255,.35), transparent 40%), radial-gradient(circle at 85% 60%, rgba(34,211,238,.25), transparent 40%); }
+  .hero .wrap { display:flex; flex-wrap:wrap; gap:28px; align-items:center; }
+  .avatar { width:130px; height:130px; border-radius:50%; display:grid; place-items:center; font-size:2.6rem; font-weight:700; background:linear-gradient(135deg,var(--a),var(--b)); box-shadow:0 0 0 6px rgba(255,255,255,.06); flex:none; }
+  .hero h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.1; }
+  .hero h1 span { background:linear-gradient(90deg,var(--a),var(--b)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .hero p { margin:10px 0 20px; max-width:520px; }
+  .btn { display:inline-block; padding:11px 22px; border-radius:10px; text-decoration:none; font-weight:600; margin:0 8px 8px 0; font-size:.95rem; }
+  .btn-a { background:linear-gradient(90deg,var(--a),var(--b)); color:#fff; } .btn-o { border:1px solid var(--line); color:var(--ink); }
+  .skills { display:flex; flex-wrap:wrap; gap:10px; }
+  .skills span { background:var(--card); border:1px solid var(--line); padding:6px 14px; border-radius:8px; font-size:.9rem; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .card h3 { font-size:1.05rem; margin-bottom:4px; }
+  .card .tags { margin-top:10px; font-size:.78rem; color:var(--b); }
+  .tl { border-left:2px solid var(--line); padding-left:20px; }
+  .tl div { position:relative; margin-bottom:22px; }
+  .tl div::before { content:""; position:absolute; left:-27px; top:6px; width:12px; height:12px; border-radius:50%; background:var(--a); box-shadow:0 0 0 4px rgba(124,92,255,.25); }
+  .tl small { color:var(--b); }
+  .contact { text-align:center; }
+  footer { text-align:center; padding:24px; color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="demo">Sample website by <a href="../index.html">Swaraj Sirsat – Web &amp; Banner Design</a>. The person shown is not real.</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="avatar">AK</div>
+    <div>
+      <p class="muted" style="margin:0">Hi, I'm</p>
+      <h1>Aarav <span>Kulkarni</span></h1>
+      <p>Final-year B.E. Computer Engineering student in Pune. I like building web apps and solving problems. Looking for an internship or fresher role.</p>
+      <a class="btn btn-a" href="#">Download my CV</a><a class="btn btn-o" href="#contact">Contact me</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills"><span>Java</span><span>Python</span><span>HTML &amp; CSS</span><span>JavaScript</span><span>React</span><span>SQL</span><span>Git</span><span>Communication</span><span>Teamwork</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><h3>📚 College Library App</h3><p class="muted">Students can search and reserve books from their phone.</p><div class="tags">React · Firebase</div></div>
+      <div class="card"><h3>🌦️ Weather Dashboard</h3><p class="muted">Shows live weather and a 5-day forecast for any city.</p><div class="tags">JavaScript · API</div></div>
+      <div class="card"><h3>🧾 Expense Tracker</h3><p class="muted">Track daily spending with simple charts.</p><div class="tags">Python · SQLite</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Education &amp; experience</h2>
+    <div class="tl">
+      <div><small>2023 – 2027</small><h3>B.E. Computer Engineering</h3><p class="muted">Example College of Engineering, Pune · CGPA 8.4</p></div>
+      <div><small>Summer 2025</small><h3>Web Development Intern</h3><p class="muted">Example Tech Pvt. Ltd. · Built pages for a client dashboard</p></div>
+      <div><small>2023</small><h3>HSC (Science)</h3><p class="muted">Maharashtra State Board · 86%</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p class="muted" style="margin-bottom:18px">Open to internships and fresher roles.</p>
+    <a class="btn btn-a" href="#">Email me</a><a class="btn btn-o" href="#">LinkedIn</a><a class="btn btn-o" href="#">GitHub</a>
+  </div>
+</section>
+
+<footer>Sample student CV website · Made by Swaraj Sirsat</footer>
+</body>
+</html>
